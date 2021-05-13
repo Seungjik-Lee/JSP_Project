@@ -1939,6 +1939,7 @@ input, select, textarea {
 
 	input[type="button"],
 	input[type="submit"],
+	input[type="signup"],
 	input[type="reset"],
 	button,
 	.button {
@@ -1963,6 +1964,7 @@ input, select, textarea {
 
 		input[type="button"]:hover,
 		input[type="submit"]:hover,
+		input[type="signup"]:hover,
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
@@ -1971,6 +1973,7 @@ input, select, textarea {
 
 		input[type="button"]:active,
 		input[type="submit"]:active,
+		input[type="signup"]:active,
 		input[type="reset"]:active,
 		button:active,
 		.button:active {
@@ -2260,6 +2263,10 @@ input, select, textarea {
 			}
 
 			#main > section.four {
+				background-color: #e8edec;
+			}
+
+			#main > section.five {
 				background-color: #e8edec;
 			}
 
