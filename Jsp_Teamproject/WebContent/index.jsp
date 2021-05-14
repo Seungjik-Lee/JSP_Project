@@ -105,21 +105,21 @@
                         <div class="card h-100">
                             <h4 class="card-header">진료파트별</h4>
                             <div class="card-body"><p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p></div>
-                            <div class="card-footer"><a class="btn btn-primary" href="#!">Learn More</a></div>
+                            <div class="card-footer"><a class="btn btn-primary" href="#!">Go To See</a></div>
                         </div>
                     </div>
                     <div class="col-lg-4 mb-4 mb-lg-0">
                         <div class="card h-100">
                             <h4 class="card-header">지역별</h4>
                             <div class="card-body"><p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ipsam eos, nam perspiciatis natus commodi similique totam consectetur praesentium molestiae atque exercitationem ut consequuntur, sed eveniet, magni nostrum sint fuga.</p></div>
-                            <div class="card-footer"><a class="btn btn-primary" href="#!">Learn More</a></div>
+                            <div class="card-footer"><a class="btn btn-primary" href="#!">Go To See</a></div>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="card h-100">
                             <h4 class="card-header">기수별</h4>
                             <div class="card-body"><p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p></div>
-                            <div class="card-footer"><a class="btn btn-primary" href="#!">Learn More</a></div>
+                            <div class="card-footer"><a class="btn btn-primary" href="#!">Go To See</a></div>
                         </div>
                     </div>
                 </div>
@@ -196,7 +196,7 @@
         <aside class="py-5 bg-light">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8"><p>질문사항은 FAQ로</p></div>
+                    <div class="col-md-8"><h3>질문사항은 FAQ로</h3></div>
                     <div class="col-md-4"><a class="btn btn-lg btn-secondary btn-block" href="faq.jsp">FAQ</a></div>
                 </div>
             </div>
