@@ -1,0 +1,13 @@
+create table hospital2
+(idx varchar(45) NOT NULL,
+unit varchar(45) NULL,
+grp varchar(45) NULL,
+name VARCHAR(100) NULL,
+addr varchar(45) NULL,
+PRIMARY KEY (idx))
+COMMENT = '번호,구분,지정분야,의료기관명,소재지'
+
+SELECT * FROM spro.hospital2;
+
+
+alter table hospital2 convert to charset utf8; -- 인코딩 문제 일어날때 코드번호 1366? 암튼, STRING 어쩌고 나면 이거 써주기
