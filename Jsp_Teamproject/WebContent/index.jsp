@@ -24,39 +24,30 @@
 <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="index.html">Start Bootstrap</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <a class="navbar-brand" href="index.jsp">JSP TeamProject</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.jsp">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.jsp">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Designated Hospital</a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                                <a class="dropdown-item" href="portfolio-1-col.html">1 Column Portfolio</a>
-                                <a class="dropdown-item" href="portfolio-2-col.html">2 Column Portfolio</a>
-                                <a class="dropdown-item" href="portfolio-3-col.html">3 Column Portfolio</a>
-                                <a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
-                                <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
+                                <a class="dropdown-item" href="#">1st Designated Hospital</a>
+                                <a class="dropdown-item" href="#">2nd Designated Hospital</a>
+                                <a class="dropdown-item" href="#">3rd Designated Hospital</a>
+                                <a class="dropdown-item" href="#">4th Designated Hospital</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sign</a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                                <a class="dropdown-item" href="blog-home-1.html">Blog Home 1</a>
-                                <a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>
-                                <a class="dropdown-item" href="blog-post.html">Blog Post</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdownPages" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Other Pages</a>
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPages">
-                                <a class="dropdown-item" href="full-width.html">Full Width Page</a>
-                                <a class="dropdown-item" href="sidebar.html">Sidebar Page</a>
-                                <a class="dropdown-item" href="faq.html">FAQ</a>
-                                <a class="dropdown-item" href="404.html">404</a>
-                                <a class="dropdown-item" href="pricing.html">Pricing Table</a>
+                                <a class="dropdown-item" href="#">Join</a>
+                                <a class="dropdown-item" href="#">Login</a>
+                                <a class="dropdown-item" href="#">Withdrawal</a>
                             </div>
                         </li>
                     </ul>
@@ -107,26 +98,26 @@
         <!-- Page Content-->
         <section class="py-5">
             <div class="container">
-                <h1 class="mb-4">Welcome to Modern Business</h1>
+                <h1 class="mb-4">여기에 그래프를 그릴까요?</h1>
                 <!-- Marketing Icons Section-->
                 <div class="row">
                     <div class="col-lg-4 mb-4 mb-lg-0">
                         <div class="card h-100">
-                            <h4 class="card-header">Card Title</h4>
+                            <h4 class="card-header">진료파트별</h4>
                             <div class="card-body"><p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p></div>
                             <div class="card-footer"><a class="btn btn-primary" href="#!">Learn More</a></div>
                         </div>
                     </div>
                     <div class="col-lg-4 mb-4 mb-lg-0">
                         <div class="card h-100">
-                            <h4 class="card-header">Card Title</h4>
+                            <h4 class="card-header">지역별</h4>
                             <div class="card-body"><p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ipsam eos, nam perspiciatis natus commodi similique totam consectetur praesentium molestiae atque exercitationem ut consequuntur, sed eveniet, magni nostrum sint fuga.</p></div>
                             <div class="card-footer"><a class="btn btn-primary" href="#!">Learn More</a></div>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="card h-100">
-                            <h4 class="card-header">Card Title</h4>
+                            <h4 class="card-header">기수별</h4>
                             <div class="card-body"><p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p></div>
                             <div class="card-footer"><a class="btn btn-primary" href="#!">Learn More</a></div>
                         </div>
@@ -138,59 +129,41 @@
         <!-- Portfolio Section-->
         <section class="py-5 bg-light">
             <div class="container">
-                <h2 class="mb-4">Portfolio Heading</h2>
+                <h2 class="mb-4">기수별 지정병원</h2>
                 <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="col-lg-6 col-sm-6 mb-4">
                         <div class="card h-100">
                             <a href="#!"><img class="card-img-top" src="https://via.placeholder.com/700x400" alt="..." /></a>
                             <div class="card-body">
-                                <h4 class="card-title"><a href="#!">Project One</a></h4>
+                                <h4 class="card-title"><a href="#!">1st Designated Hospital</a></h4>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="col-lg-6 col-sm-6 mb-4">
                         <div class="card h-100">
                             <a href="#!"><img class="card-img-top" src="https://via.placeholder.com/700x400" alt="..." /></a>
                             <div class="card-body">
-                                <h4 class="card-title"><a href="#!">Project Two</a></h4>
+                                <h4 class="card-title"><a href="#!">2nd Designated Hospital</a></h4>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="col-lg-6 col-sm-6 mb-4">
                         <div class="card h-100">
                             <a href="#!"><img class="card-img-top" src="https://via.placeholder.com/700x400" alt="..." /></a>
                             <div class="card-body">
-                                <h4 class="card-title"><a href="#!">Project Three</a></h4>
+                                <h4 class="card-title"><a href="#!">3rd Designated Hospital</a></h4>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="col-lg-6 col-sm-6 mb-4">
                         <div class="card h-100">
                             <a href="#!"><img class="card-img-top" src="https://via.placeholder.com/700x400" alt="..." /></a>
                             <div class="card-body">
-                                <h4 class="card-title"><a href="#!">Project Four</a></h4>
+                                <h4 class="card-title"><a href="#!">4th Designated Hospital</a></h4>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="card h-100">
-                            <a href="#!"><img class="card-img-top" src="https://via.placeholder.com/700x400" alt="..." /></a>
-                            <div class="card-body">
-                                <h4 class="card-title"><a href="#!">Project Five</a></h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="card h-100">
-                            <a href="#!"><img class="card-img-top" src="https://via.placeholder.com/700x400" alt="..." /></a>
-                            <div class="card-body">
-                                <h4 class="card-title"><a href="#!">Project Six</a></h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident, perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse.</p>
                             </div>
                         </div>
                     </div>
@@ -223,8 +196,8 @@
         <aside class="py-5 bg-light">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p></div>
-                    <div class="col-md-4"><a class="btn btn-lg btn-secondary btn-block" href="#!">Call to Action</a></div>
+                    <div class="col-md-8"><p>질문사항은 FAQ로</p></div>
+                    <div class="col-md-4"><a class="btn btn-lg btn-secondary btn-block" href="faq.jsp">FAQ</a></div>
                 </div>
             </div>
         </aside>
