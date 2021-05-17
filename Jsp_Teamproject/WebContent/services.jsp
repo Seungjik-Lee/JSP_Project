@@ -20,6 +20,12 @@
 <title>Insert title here</title>
 </head>
 <body>
+<%
+String userID = null;
+if (session.getAttribute("id") != null) {
+	userID = (String) session.getAttribute("id");
+}
+%>
 <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
@@ -40,18 +46,37 @@
                                 <a class="dropdown-item" href="#">3rd Designated Hospital</a>
                                 <a class="dropdown-item" href="#">4th Designated Hospital</a>
                             </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sign</a>
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                                <a class="dropdown-item" href="#">Join</a>
-                                <a class="dropdown-item" href="#">Login</a>
-                                <a class="dropdown-item" href="#">Withdrawal</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+                      <%
+						// 로그인 하지 않았을 때 보여지는 화면
+						if (userID == null) {
+					%>
+					<li class="nav-item dropdown"><a
+						class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sign</a>
+						<div class="dropdown-menu dropdown-menu-right"
+							aria-labelledby="navbarDropdownBlog">
+							<a class="dropdown-item" href="member/singin.jsp">Join</a> <a
+								class="dropdown-item" href="member/login.jsp">Login</a>
+
+						</div></li>
+					<%
+						// 로그인이 되어 있는 상태에서 보여주는 화면
+						} else {
+					%>
+					<li class="nav-item dropdown"><a
+						class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><%=userID%>님</a>
+						<div class="dropdown-menu dropdown-menu-right"
+							aria-labelledby="navbarDropdownBlog">
+							<a class="dropdown-item" href="member/logout.jsp">logout</a> <a
+								class="dropdown-item" href="#">Withdrawal</a>
+						</div></li>
+				</ul>
+			</div>
+		</div>
+		<%
+			}
+		%>
         </nav>
 	<!-- Page Content-->
 	<section class="py-5">

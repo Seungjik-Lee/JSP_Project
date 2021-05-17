@@ -55,8 +55,8 @@
 						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sign</a>
 						<div class="dropdown-menu dropdown-menu-right"
 							aria-labelledby="navbarDropdownBlog">
-							<a class="dropdown-item" href="#">Join</a> <a
-								class="dropdown-item" href="#">Login</a> <a
+							<a class="dropdown-item" href="signin.jsp">Join</a> <a
+								class="dropdown-item" href="../index.jsp">home</a> <a
 								class="dropdown-item" href="#">Withdrawal</a>
 						</div></li>
 				</ul>
