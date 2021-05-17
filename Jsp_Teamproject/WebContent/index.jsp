@@ -46,17 +46,16 @@
 					<li class="nav-item"><a class="nav-link" href="about.jsp">About</a></li>
 					<li class="nav-item"><a class="nav-link" href="services.jsp">Services</a></li>
 					<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-					<li class="nav-item dropdown"><a
-						class="nav-link dropdown-toggle" id="navbarDropdownPortfolio"
-						href="#" data-toggle="dropdown" aria-haspopup="true"
+					<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" data-toggle="dropdown" aria-haspopup="true"
 						aria-expanded="false">Designated Hospital</a>
-						<div class="dropdown-menu dropdown-menu-right"
-							aria-labelledby="navbarDropdownPortfolio">
-							<a class="dropdown-item" href="#">1st Designated Hospital</a> <a
-								class="dropdown-item" href="#">2nd Designated Hospital</a> <a
-								class="dropdown-item" href="#">3rd Designated Hospital</a> <a
-								class="dropdown-item" href="#">4th Designated Hospital</a>
-						</div></li>
+						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+							<a class="dropdown-item" href="../broad/broad_1st.jsp">1st Designated Hospital</a> 
+							<a class="dropdown-item" href="../broad/broad_2nd.jsp">2nd Designated Hospital</a> 
+							<a class="dropdown-item" href="../broad/broad_3rd.jsp">3rd Designated Hospital</a>
+							<a class="dropdown-item" href="../broad/broad_4th.jsp">4th Designated Hospital</a>
+						</div>
+					</li>
 					<%
 						// 로그인 하지 않았을 때 보여지는 화면
 						if (userID == null) {
@@ -127,12 +126,13 @@
 			</div>
 			<a class="carousel-control-prev" href="#carouselExampleIndicators"
 				role="button" data-slide="prev"> <span
-				class="carousel-control-prev-icon" aria-hidden="true"></span> <span
-				class="sr-only">Previous</span>
-			</a> <a class="carousel-control-next" href="#carouselExampleIndicators"
+				class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleIndicators"
 				role="button" data-slide="next"> <span
-				class="carousel-control-next-icon" aria-hidden="true"></span> <span
-				class="sr-only">Next</span>
+				class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
 			</a>
 		</div>
 	</header>
@@ -196,7 +196,7 @@
 							src="https://via.placeholder.com/700x400" alt="..." /></a>
 						<div class="card-body">
 							<h4 class="card-title">
-								<a href="#!">1st Designated Hospital</a>
+								<a href="../broad/broad_1st.jsp">1st Designated Hospital</a>
 							</h4>
 							<p class="card-text">Lorem ipsum dolor sit amet, consectetur
 								adipisicing elit. Amet numquam aspernatur eum quasi sapiente
@@ -211,7 +211,7 @@
 							src="https://via.placeholder.com/700x400" alt="..." /></a>
 						<div class="card-body">
 							<h4 class="card-title">
-								<a href="#!">2nd Designated Hospital</a>
+								<a href="../broad/broad_2nd.jsp">2nd Designated Hospital</a>
 							</h4>
 							<p class="card-text">Lorem ipsum dolor sit amet, consectetur
 								adipiscing elit. Nam viverra euismod odio, gravida pellentesque
@@ -225,7 +225,7 @@
 							src="https://via.placeholder.com/700x400" alt="..." /></a>
 						<div class="card-body">
 							<h4 class="card-title">
-								<a href="#!">3rd Designated Hospital</a>
+								<a href="../broad/broad_3rd.jsp">3rd Designated Hospital</a>
 							</h4>
 							<p class="card-text">Lorem ipsum dolor sit amet, consectetur
 								adipisicing elit. Quos quisquam, error quod sed cumque, odio
@@ -240,7 +240,7 @@
 							src="https://via.placeholder.com/700x400" alt="..." /></a>
 						<div class="card-body">
 							<h4 class="card-title">
-								<a href="#!">4th Designated Hospital</a>
+								<a href="../broad/broad_4th.jsp">4th Designated Hospital</a>
 							</h4>
 							<p class="card-text">Lorem ipsum dolor sit amet, consectetur
 								adipiscing elit. Nam viverra euismod odio, gravida pellentesque
