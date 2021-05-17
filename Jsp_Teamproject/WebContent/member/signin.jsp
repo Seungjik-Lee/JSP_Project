@@ -59,7 +59,7 @@
 								class="dropdown-item" href="../index.jsp">home</a> <a
 								class="dropdown-item" href="#">Withdrawal</a>
 						</div></li>
-				</ul>
+				</ul> 
 			</div>
 		</div>
 	</nav>
