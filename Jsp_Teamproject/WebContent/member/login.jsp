@@ -22,6 +22,7 @@
 <script src="../js/scripts.js"></script>
 
 <title>Insert title here</title>
+
 </head>
 <body>
 	<!-- Navigation-->
@@ -63,9 +64,9 @@
 			</div>
 		</div>
 	</nav>
-	<div class="container">
-		<div class="col-lg-5">
-			<div class="jumbotron" style="padding-top: 20px;">
+	<div class="container col-lg-3">
+		<div>
+			<div class="jumbotron" style="padding-top: 20px;margin-top: 32px;">
 				<form method="post" action="loginA.jsp">
 					<h3 style="text-align: center;">로그인</h3>
 					<div class="form-group">

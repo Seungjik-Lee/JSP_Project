@@ -64,9 +64,9 @@
 		</div>
 	</nav>
 
-	<div class="container">
-		<div class="col-lg-4">
-			<div class="jumbotron" style="padding-top: 20px;">
+	<div class="container col-lg-4">
+		<div >
+			<div class="jumbotron" style="padding-top: 20px;margin-top: 32px;">
 				<form method="post" action="joinA.jsp">
 					<h3 style="text-align: center;">회원가입 화면</h3>
 					<div class="form-group">
