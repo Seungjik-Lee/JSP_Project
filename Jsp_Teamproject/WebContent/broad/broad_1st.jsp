@@ -5,8 +5,8 @@
 <%@ page import="java.util.List" %>
 
 <%
-// 	BroadDBM bbdm = new BroadDBM();
-// 	List<BroadDB> list = bbdm.select();
+	BroadDBM bdbm = new BroadDBM();
+	List<BroadDB> list = bdbm.select();
 %>
 
 <!DOCTYPE html>
@@ -24,10 +24,6 @@
 </head>
 <body>
 	<div class="jumbotron">
-		<div class="row ml-2 mb-2">
-			<input class="btn btn-primary mr-2" type="button" value="분류2" id="code2" />
-			<input class="btn btn-primary" type="button" value="분류4" id="code4" />
-		</div>
 		<h1>1st Designated Hospital</h1>
 		<p>병원리스트</p>
 		<table class="table table-dark table-hover text-center">
@@ -38,14 +34,20 @@
 				</tr>
 			</thead>
 			<tbody>
-				<% for (BroadDB bdb : list) { 
-					if(bdb.getUnit().equals("1기"))
+				<% 
+				for (BroadDB bdb : list) { 
+					if(bdb.getUnit().equals(" 1기")) {
 				%>
 				<tr>
-					<td><%=bdb.getUnit()%></td><td><%=bdb.getGrp()%></td><td><%=bdb.getName()%></td>
+					<td><%=bdb.getUnit()%></td>
+					<td><%=bdb.getGrp()%></td>
+					<td><%=bdb.getName()%></td>
 					<td><%=bdb.getAddr()%></td>
 				</tr>
-				<% } %>
+				<% 
+					}
+				}
+				%>
 			</tbody>
 		</table>
 	</div>

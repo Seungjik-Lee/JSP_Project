@@ -50,10 +50,10 @@
 					<a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" data-toggle="dropdown" aria-haspopup="true"
 						aria-expanded="false">Designated Hospital</a>
 						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-							<a class="dropdown-item" href="../broad/broad_1st.jsp">1st Designated Hospital</a> 
-							<a class="dropdown-item" href="../broad/broad_2nd.jsp">2nd Designated Hospital</a> 
-							<a class="dropdown-item" href="../broad/broad_3rd.jsp">3rd Designated Hospital</a>
-							<a class="dropdown-item" href="../broad/broad_4th.jsp">4th Designated Hospital</a>
+							<a class="dropdown-item" href="broad/broad_1st.jsp">1st Designated Hospital</a> 
+							<a class="dropdown-item" href="broad/broad_2nd.jsp">2nd Designated Hospital</a> 
+							<a class="dropdown-item" href="broad/broad_3rd.jsp">3rd Designated Hospital</a>
+							<a class="dropdown-item" href="broad/broad_4th.jsp">4th Designated Hospital</a>
 						</div>
 					</li>
 					<%
@@ -196,7 +196,7 @@
 							src="https://via.placeholder.com/700x400" alt="..." /></a>
 						<div class="card-body">
 							<h4 class="card-title">
-								<a href="../broad/broad_1st.jsp">1st Designated Hospital</a>
+								<a href="broad/broad_1st.jsp">1st Designated Hospital</a>
 							</h4>
 							<p class="card-text">Lorem ipsum dolor sit amet, consectetur
 								adipisicing elit. Amet numquam aspernatur eum quasi sapiente
@@ -211,7 +211,7 @@
 							src="https://via.placeholder.com/700x400" alt="..." /></a>
 						<div class="card-body">
 							<h4 class="card-title">
-								<a href="../broad/broad_2nd.jsp">2nd Designated Hospital</a>
+								<a href="broad/broad_2nd.jsp">2nd Designated Hospital</a>
 							</h4>
 							<p class="card-text">Lorem ipsum dolor sit amet, consectetur
 								adipiscing elit. Nam viverra euismod odio, gravida pellentesque
@@ -225,7 +225,7 @@
 							src="https://via.placeholder.com/700x400" alt="..." /></a>
 						<div class="card-body">
 							<h4 class="card-title">
-								<a href="../broad/broad_3rd.jsp">3rd Designated Hospital</a>
+								<a href="broad/broad_3rd.jsp">3rd Designated Hospital</a>
 							</h4>
 							<p class="card-text">Lorem ipsum dolor sit amet, consectetur
 								adipisicing elit. Quos quisquam, error quod sed cumque, odio
@@ -240,7 +240,7 @@
 							src="https://via.placeholder.com/700x400" alt="..." /></a>
 						<div class="card-body">
 							<h4 class="card-title">
-								<a href="../broad/broad_4th.jsp">4th Designated Hospital</a>
+								<a href="broad/broad_4th.jsp">4th Designated Hospital</a>
 							</h4>
 							<p class="card-text">Lorem ipsum dolor sit amet, consectetur
 								adipiscing elit. Nam viverra euismod odio, gravida pellentesque
