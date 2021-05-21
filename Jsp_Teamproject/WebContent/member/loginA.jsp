@@ -3,6 +3,7 @@
 <%@page import="java.io.PrintWriter"%>
 <%@ page import="JspTeam.CustomerDBM"%>
 
+
 <jsp:useBean id="user" class="JspTeam.CustomerDB" scope="page" />
 <jsp:setProperty name="user" property="id" />
 <jsp:setProperty name="user" property="pw" />
