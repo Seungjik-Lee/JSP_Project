@@ -56,8 +56,7 @@
 					} else {
 				%>
 					<li class="nav-item"><a class="nav-link" href="about.jsp">About</a></li>
-					<li class="nav-item"><a class="nav-link" href="services.jsp">Services</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+					<li class="nav-item"><a class="nav-link" href="faq.jsp">FAQ</a></li>
 					<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Designated Hospital</a>
 						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
@@ -276,10 +275,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8">
-					<h3>질문사항은 FAQ로</h3>
+					<h3>게시판이 되어버림</h3>
 				</div>
 				<div class="col-md-4">
-					<a class="btn btn-lg btn-secondary btn-block" href="faq.jsp">FAQ</a>
+					<a class="btn btn-lg btn-secondary btn-block" href="bbs/bbs.jsp">게시판</a>
 				</div>
 			</div>
 		</div>

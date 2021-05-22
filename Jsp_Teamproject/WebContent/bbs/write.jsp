@@ -75,18 +75,16 @@
 		</div>
 	</nav>
 	
-	<div class="container">
-		<div class="row mt-4">
+	<div class="container mt-4 ">
 			<form method="post" action="writeAction.jsp">
 				<table class="table table-striped" style="text-align: center; border: 1px solid #dddddd">
 					<thead>
 						<tr>
-							<th colspan="2" style="background-color: #eeeeee; text-align: center;">게시판 글쓰기 양식</th>
+							<th colspan="2" style="background-color: #eeeeee; text-align: center">게시판 글쓰기 양식</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<!-- 테스트코드 -->
 							<td><input type="text" class="form-control" placeholder="글 제목" name="bbsTitle" maxlength="50"></td>
 						</tr>
 						<tr>
@@ -96,15 +94,14 @@
 					</tbody>
 				</table>
 				<!-- 글쓰기 버튼 -->
-				<input type="submit" class="btn btn-primary pull-right" value="글쓰기">
+				<input type="submit" class="btn btn-primary pull-right mb-4" value="글쓰기">
 			</form>
 		</div>
 	</div>
 	
 <footer class="py-5 bg-dark">
 		<div class="container">
-			<p class="m-0 text-center text-white">Copyright &copy; Your
-				Website 2021</p>
+			<p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p>
 		</div>
 	</footer>
 </body>
