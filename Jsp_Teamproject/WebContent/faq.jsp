@@ -22,12 +22,13 @@
 </head>
 <body>
 <%
-String userID = null;
-if (session.getAttribute("id") != null) {
-	userID = (String) session.getAttribute("id");
-}
-%>
-<!-- Navigation-->
+		// 메인 페이지로 이동했을 때 세션에 값이 담겨있는지 체크
+		String userID = null;
+		if (session.getAttribute("id") != null) {
+			userID = (String) session.getAttribute("id");
+		}
+	%>
+	<!-- Navigation-->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container">
 			<a class="navbar-brand" href="index.jsp">JSP TeamProject</a>
@@ -52,14 +53,14 @@ if (session.getAttribute("id") != null) {
 					} else {
 				%>
 					<li class="nav-item"><a class="nav-link" href="about.jsp">About</a></li>
-					<li class="nav-item"><a class="nav-link" href="services.jsp">Services</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+					<li class="nav-item"><a class="nav-link" href="faq.jsp">FAQ</a></li>
 					<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Designated Hospital</a>
 						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-							<a class="dropdown-item" href="broad/broad_1st.jsp">1st Designated Hospital</a> <a class="dropdown-item" href="broad/broad_2nd.jsp">2nd Designated Hospital</a>
-								<a class="dropdown-item" href="broad/broad_3rd.jsp">3rd Designated Hospital</a>
-								<a class="dropdown-item" href="broad/broad_4th.jsp">4th Designated Hospital</a>
+							<a class="dropdown-item" href="broad/broad_1st.jsp">1st Designated Hospital</a>
+							<a class="dropdown-item" href="broad/broad_2nd.jsp">2nd Designated Hospital</a>
+							<a class="dropdown-item" href="broad/broad_3rd.jsp">3rd Designated Hospital</a>
+							<a class="dropdown-item" href="broad/broad_4th.jsp">4th Designated Hospital</a>
 						</div>
 					</li>
 

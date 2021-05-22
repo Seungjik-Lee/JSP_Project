@@ -37,7 +37,7 @@
 	<!-- Navigation-->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container">
-			<a class="navbar-brand" href="index.jsp">JSP TeamProject</a>
+			<a class="navbar-brand" href="../index.jsp">JSP TeamProject</a>
 			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -50,30 +50,30 @@
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sign</a>
 						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-							<a class="dropdown-item" href="member/signin.jsp">Join</a>
-							<a class="dropdown-item" href="member/login.jsp">Login</a>
+							<a class="dropdown-item" href="../member/signin.jsp">Join</a>
+							<a class="dropdown-item" href="../member/login.jsp">Login</a>
 						</div>
 					</li>
 				<%
 					// 로그인이 되어 있는 상태에서 보여주는 화면
 					} else {
 				%>
-					<li class="nav-item"><a class="nav-link" href="about.jsp">About</a></li>
-					<li class="nav-item"><a class="nav-link" href="services.jsp">Services</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+					<li class="nav-item"><a class="nav-link" href="../about.jsp">About</a></li>
+					<li class="nav-item"><a class="nav-link" href="../faq.jsp">FAQ</a></li>
 					<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Designated Hospital</a>
 						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-							<a class="dropdown-item" href="broad/broad_1st.jsp">1st Designated Hospital</a> <a class="dropdown-item" href="broad/broad_2nd.jsp">2nd Designated Hospital</a>
-								<a class="dropdown-item" href="broad/broad_3rd.jsp">3rd Designated Hospital</a>
-								<a class="dropdown-item" href="broad/broad_4th.jsp">4th Designated Hospital</a>
+							<a class="dropdown-item" href="../broad/broad_1st.jsp">1st Designated Hospital</a>
+							<a class="dropdown-item" href="../broad/broad_2nd.jsp">2nd Designated Hospital</a>
+							<a class="dropdown-item" href="../broad/broad_3rd.jsp">3rd Designated Hospital</a>
+							<a class="dropdown-item" href="../broad/broad_4th.jsp">4th Designated Hospital</a>
 						</div>
 					</li>
 
 					<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><%=userID%>님</a>
 						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-							<a class="dropdown-item" href="member/logout.jsp">logout</a>
+							<a class="dropdown-item" href="../member/logout.jsp">logout</a>
 							<a class="dropdown-item" href="#">Withdrawal</a>
 						</div>
 					</li>

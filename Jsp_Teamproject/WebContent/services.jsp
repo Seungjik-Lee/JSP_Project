@@ -56,9 +56,10 @@ if (session.getAttribute("id") != null) {
 					<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Designated Hospital</a>
 						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-							<a class="dropdown-item" href="broad/broad_1st.jsp">1st Designated Hospital</a> <a class="dropdown-item" href="broad/broad_2nd.jsp">2nd Designated Hospital</a>
-								<a class="dropdown-item" href="broad/broad_3rd.jsp">3rd Designated Hospital</a>
-								<a class="dropdown-item" href="broad/broad_4th.jsp">4th Designated Hospital</a>
+							<a class="dropdown-item" href="broad/broad_1st.jsp">1st Designated Hospital</a>
+							<a class="dropdown-item" href="broad/broad_2nd.jsp">2nd Designated Hospital</a>
+							<a class="dropdown-item" href="broad/broad_3rd.jsp">3rd Designated Hospital</a>
+							<a class="dropdown-item" href="broad/broad_4th.jsp">4th Designated Hospital</a>
 						</div>
 					</li>
 
