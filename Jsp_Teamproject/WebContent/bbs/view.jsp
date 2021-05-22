@@ -97,7 +97,7 @@
 	</nav>
 	
 <div class="container">
-		<div class="row">
+		<div class="row mt-4">
 			<table class="table table-striped" style="text-align: center; border: 1px solid #dddddd">
 				<thead>
 					<tr>
@@ -126,14 +126,14 @@
 					</tr>
 				</tbody>
 			</table>
-			<a href="bbs.jsp" class="btn btn-primary">목록</a>
+			<a href="bbs.jsp" class="btn btn-primary mb-3">목록</a>
 			
 			<!-- 해당 글의 작성자가 본인이라면 수정과 삭제가 가능하도록 코드 추가 -->
 			<%
 				if(userID != null && userID.equals(bbs.getUserID())){
 			%>
-					<a href="update.jsp?bbsID=<%= bbsID %>" class="btn btn-primary">수정</a>
-					<a href="deleteAction.jsp?bbsID=<%= bbsID %>" class="btn btn-primary">삭제</a>
+					<a href="update.jsp?bbsID=<%= bbsID %>" class="btn btn-primary mb-3 ml-2">수정</a>
+					<a href="deleteAction.jsp?bbsID=<%= bbsID %>" class="btn btn-primary mb-3 ml-2">삭제</a>
 			<%
 				}
 			%>

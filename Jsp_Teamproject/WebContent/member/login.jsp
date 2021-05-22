@@ -85,7 +85,7 @@
 	<div class="container col-lg-3">
 		<div>
 			<div class="jumbotron" style="padding-top: 20px;margin-top: 32px;">
-				<form method="post" action="loginA.jsp">
+				<form method="post" action="../member/loginA.jsp">
 					<h3 style="text-align: center;">로그인</h3>
 					<div class="form-group">
 						<input type="text" class="form-control" placeholder="아이디"
@@ -110,7 +110,7 @@
 					<h3>질문사항은 FAQ로</h3>
 				</div>
 				<div class="col-md-4">
-					<a class="btn btn-lg btn-secondary btn-block" href="faq.jsp">FAQ</a>
+					<a class="btn btn-lg btn-secondary btn-block" href="#">FAQ</a>
 				</div>
 			</div>
 		</div>

@@ -127,14 +127,13 @@
 				}
 			%>
 			<!-- 글쓰기 버튼 -->
-			<a href="write.jsp" class="btn btn-primary pull-right mb-4">글쓰기</a>
+			<a href="write.jsp" class="btn btn-primary pull-right mb-3">글쓰기</a>
 		</div>
 	</div>
 	
 <footer class="py-5 bg-dark">
 		<div class="container">
-			<p class="m-0 text-center text-white">Copyright &copy; Your
-				Website 2021</p>
+			<p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p>
 		</div>
 	</footer>
 </body>
