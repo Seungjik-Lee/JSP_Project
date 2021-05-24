@@ -1,5 +1,5 @@
-create table hospital2
-(idx varchar(45) NOT NULL,
+create table jsp_teamproject.hospital2
+(idx int NOT NULL,
 unit varchar(45) NULL,
 grp varchar(45) NULL,
 name VARCHAR(100) NULL,
