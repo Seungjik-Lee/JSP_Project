@@ -80,7 +80,10 @@ public class BBS_DAO {
 		String sql4 = "select * from bbs where bbsID < ? and bbsAvailable = 1 order by bbsID desc limit 10";
 		ArrayList<BBS_DB> list = new ArrayList<BBS_DB>();
 		try {
-			PreparedStatement pstmt = conn.prepareStatement(sql4);
+			PreparedStatement pstmt = conn.prepareStatement("set time_zone = 'Asia/Seoul'");
+			pstmt.executeUpdate();
+			
+			pstmt = conn.prepareStatement(sql4);
 			pstmt.setInt(1,  getNext() - (pageNumber -1) * 10);
 			rs = pstmt.executeQuery();
 
@@ -89,6 +92,7 @@ public class BBS_DAO {
 				bbsdb.setBbsID(rs.getInt(1));
 				bbsdb.setBbsTitle(rs.getString(2));
 				bbsdb.setUserID(rs.getString(3));
+				System.out.println("rs.getString(4) = "+rs.getString(4));
 				bbsdb.setBbsDate(rs.getString(4));
 				bbsdb.setBbsContent(rs.getString(5));
 				bbsdb.setBbsAvailable(rs.getInt(6));
@@ -123,7 +127,10 @@ public class BBS_DAO {
 		String sql6 = "select * from bbs where bbsID = ?";
 		
 		try {
-			PreparedStatement pstmt = conn.prepareStatement(sql6);
+			PreparedStatement pstmt = conn.prepareStatement("set time_zone = 'Asia/Seoul'");
+			pstmt.executeUpdate();
+			
+			pstmt = conn.prepareStatement(sql6);
 			pstmt.setInt(1, bbsID);
 			rs = pstmt.executeQuery();
 			
