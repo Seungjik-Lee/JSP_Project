@@ -35,7 +35,7 @@
 			</thead>
 			<tbody>
 				<% for (BroadDB bdb : list) { 
-					if(bdb.getUnit().equals(" 4기")) {
+					if(bdb.getUnit().equals("4기")) {
 				%>
 				<tr>
 					<td><%=bdb.getUnit()%></td>

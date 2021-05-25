@@ -93,7 +93,7 @@
 			<div class="carousel-inner">
 				<div class="carousel-item active">
 					<img class="d-block w-100"
-						src="https://via.placeholder.com/1900x600" alt="..." />
+						src="./img/용인세브란스.jpg" alt="..." />
 					<div class="carousel-caption d-none d-md-block">
 						<h3>First Slide</h3>
 						<p>This is a description for the first slide.</p>
@@ -101,7 +101,7 @@
 				</div>
 				<div class="carousel-item">
 					<img class="d-block w-100"
-						src="https://via.placeholder.com/1900x600" alt="..." />
+						src="./img/연세세브란스.jpg" alt="..." />
 					<div class="carousel-caption d-none d-md-block">
 						<h3>Second Slide</h3>
 						<p>This is a description for the second slide.</p>
@@ -109,7 +109,7 @@
 				</div>
 				<div class="carousel-item">
 					<img class="d-block w-100"
-						src="https://via.placeholder.com/1900x600" alt="..." />
+						src="./img/분당서울병원.jpg" alt="..." />
 					<div class="carousel-caption d-none d-md-block">
 						<h3>Third Slide</h3>
 						<p>This is a description for the third slide.</p>
@@ -184,7 +184,7 @@
 				<div class="col-lg-6 col-sm-6 mb-4">
 					<div class="card h-100">
 						<a href="#!"><img class="card-img-top"
-							src="https://via.placeholder.com/700x400" alt="..." /></a>
+							src="./img/사진1.jpg" alt="..." /></a>
 						<div class="card-body">
 							<h4 class="card-title">
 								<a href="broad/broad_1st.jsp">1st Designated Hospital</a>
@@ -199,7 +199,7 @@
 				<div class="col-lg-6 col-sm-6 mb-4">
 					<div class="card h-100">
 						<a href="#!"><img class="card-img-top"
-							src="https://via.placeholder.com/700x400" alt="..." /></a>
+							src="./img/사진2.jpg" alt="..." /></a>
 						<div class="card-body">
 							<h4 class="card-title">
 								<a href="broad/broad_2nd.jsp">2nd Designated Hospital</a>
@@ -213,7 +213,7 @@
 				<div class="col-lg-6 col-sm-6 mb-4">
 					<div class="card h-100">
 						<a href="#!"><img class="card-img-top"
-							src="https://via.placeholder.com/700x400" alt="..." /></a>
+							src="./img/사진3.jpg" alt="..." /></a>
 						<div class="card-body">
 							<h4 class="card-title">
 								<a href="broad/broad_3rd.jsp">3rd Designated Hospital</a>
@@ -228,7 +228,7 @@
 				<div class="col-lg-6 col-sm-6 mb-4">
 					<div class="card h-100">
 						<a href="#!"><img class="card-img-top"
-							src="https://via.placeholder.com/700x400" alt="..." /></a>
+							src="./img/사진4.jpg" alt="..." /></a>
 						<div class="card-body">
 							<h4 class="card-title">
 								<a href="broad/broad_4th.jsp">4th Designated Hospital</a>
@@ -275,7 +275,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8">
-					<h3>게시판이 되어버림</h3>
+					<h3>병원 이용 후기</h3>
 				</div>
 				<div class="col-md-4">
 					<a class="btn btn-lg btn-secondary btn-block" href="bbs/bbs.jsp">게시판</a>

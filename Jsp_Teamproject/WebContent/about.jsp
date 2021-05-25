@@ -102,8 +102,7 @@ String userID = (String) session.getAttribute("id");
                 <h2 class="mb-4">Our Team</h2>
                 <div class="row">
                     <div class="col-lg-3 mb-4 mb-lg-0">
-                        <div class="card h-100 text-center">
-                            <img class="card-img-top" src="https://via.placeholder.com/750x450" alt="..." />
+                        <div class="card h-80 text-center">
                             <div class="card-body">
                                 <h4 class="card-title">배지왕</h4>
                                 <h6 class="card-subtitle mb-2 text-muted">Position</h6>
@@ -113,8 +112,7 @@ String userID = (String) session.getAttribute("id");
                         </div>
                     </div>
                     <div class="col-lg-3 mb-4 mb-lg-0">
-                        <div class="card h-100 text-center">
-                            <img class="card-img-top" src="https://via.placeholder.com/750x450" alt="..." />
+                        <div class="card h-80 text-center">
                             <div class="card-body">
                                 <h4 class="card-title">이기정</h4>
                                 <h6 class="card-subtitle mb-2 text-muted">Position</h6>
@@ -124,8 +122,7 @@ String userID = (String) session.getAttribute("id");
                         </div>
                     </div>
                     <div class="col-lg-3 mb-4 mb-lg-0">
-                        <div class="card h-100 text-center">
-                            <img class="card-img-top" src="https://via.placeholder.com/750x450" alt="..." />
+                        <div class="card h-80 text-center">
                             <div class="card-body">
                                 <h4 class="card-title">이시형</h4>
                                 <h6 class="card-subtitle mb-2 text-muted">Position</h6>
@@ -135,8 +132,7 @@ String userID = (String) session.getAttribute("id");
                         </div>
                     </div>
                     <div class="col-lg-3 mb-4 mb-lg-0">
-                        <div class="card h-100 text-center">
-                            <img class="card-img-top" src="https://via.placeholder.com/750x450" alt="..." />
+                        <div class="card h-80 text-center">
                             <div class="card-body">
                                 <h4 class="card-title">안재혁</h4>
                                 <h6 class="card-subtitle mb-2 text-muted">Position</h6>
@@ -146,8 +142,7 @@ String userID = (String) session.getAttribute("id");
                         </div>
                     </div>
                     <div class="col-lg-3 mt-4">
-                        <div class="card h-100 text-center">
-                            <img class="card-img-top" src="https://via.placeholder.com/750x450" alt="..." />
+                        <div class="card h-80 text-center">
                             <div class="card-body">
                                 <h4 class="card-title">이승직</h4>
                                 <h6 class="card-subtitle mb-2 text-muted">Position</h6>
@@ -165,12 +160,12 @@ String userID = (String) session.getAttribute("id");
             <div class="container">
                 <h2 class="mb-4">We Used</h2>
                 <div class="row">
-                    <div class="col-lg-2 col-sm-4 mb-4 mb-lg-0"><img class="img-fluid" src="https://via.placeholder.com/500x300" alt="..." /></div>
-                    <div class="col-lg-2 col-sm-4 mb-4 mb-lg-0"><img class="img-fluid" src="https://via.placeholder.com/500x300" alt="..." /></div>
-                    <div class="col-lg-2 col-sm-4 mb-4 mb-lg-0"><img class="img-fluid" src="https://via.placeholder.com/500x300" alt="..." /></div>
-                    <div class="col-lg-2 col-sm-4 mb-4 mb-sm-0"><img class="img-fluid" src="https://via.placeholder.com/500x300" alt="..." /></div>
-                    <div class="col-lg-2 col-sm-4 mb-4 mb-sm-0"><img class="img-fluid" src="https://via.placeholder.com/500x300" alt="..." /></div>
-                    <div class="col-lg-2 col-sm-4"><img class="img-fluid" src="https://via.placeholder.com/500x300" alt="..." /></div>
+                    <div class="col-lg-2 col-sm-4 mb-4 mb-lg-0"><img class="img-fluid" src="./img/java.png" alt="..." /></div>
+                    <div class="col-lg-2 col-sm-4 mb-4 mb-lg-0"><img class="img-fluid" src="./img/javascript.png" alt="..." /></div>
+                    <div class="col-lg-2 col-sm-4 mb-4 mb-lg-0"><img class="img-fluid" src="./img/jquery.png" alt="..." /></div>
+                    <div class="col-lg-2 col-sm-4 mb-4 mb-sm-0"><img class="img-fluid" src="./img/jsp.png" alt="..." /></div>
+                    <div class="col-lg-2 col-sm-4 mb-4 mb-sm-0"><img class="img-fluid" src="./img/html5css3.png" alt="..." /></div>
+                    <div class="col-lg-2 col-sm-4"><img class="img-fluid" src="img/bootstrap.png" alt="..." /></div>
                 </div>
             </div>
         </section>
