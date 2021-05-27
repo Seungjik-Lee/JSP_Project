@@ -1,0 +1,9 @@
+create table jsp_teamproject.hospital2
+(idx int(10) NOT NULL AUTO_INCREMENT, --idx자동생성
+unit varchar(45) NULL,
+grp varchar(45) NULL,
+name VARCHAR(100) NULL,
+addr varchar(45) NULL,
+PRIMARY KEY (idx))
+COMMENT = '번호,구분,지정분야,의료기관명,소재지'
+
