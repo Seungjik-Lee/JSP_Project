@@ -92,7 +92,6 @@ public class BBS_DAO {
 				bbsdb.setBbsID(rs.getInt(1));
 				bbsdb.setBbsTitle(rs.getString(2));
 				bbsdb.setUserID(rs.getString(3));
-				System.out.println("rs.getString(4) = "+rs.getString(4));
 				bbsdb.setBbsDate(rs.getString(4));
 				bbsdb.setBbsContent(rs.getString(5));
 				bbsdb.setBbsAvailable(rs.getInt(6));

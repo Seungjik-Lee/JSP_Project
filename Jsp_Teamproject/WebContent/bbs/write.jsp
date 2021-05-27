@@ -74,31 +74,37 @@
 			</div>
 		</div>
 	</nav>
-	
-	<div class="container mt-4 ">
-		<form method="post" action="writeAction.jsp">
-			<table class="table table-striped" style="text-align: center; border: 1px solid #dddddd">
-				<thead>
-					<tr>
-						<th colspan="2" style="background-color: #eeeeee; text-align: center">게시판 글쓰기 양식</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td><input type="text" class="form-control" placeholder="글 제목" name="bbsTitle" maxlength="50"></td>
-					</tr>
-					<tr>
-						<td><textarea class="form-control" placeholder="글 내용" name="bbsContent" maxlength="2048" style="height: 350px;">
-						</textarea></td>
-					</tr>
-				</tbody>
-			</table>
-			<!-- 글쓰기 버튼 -->
-			<input type="submit" class="btn btn-primary pull-right mb-4" value="글쓰기">
-		</form>
+
+	<div class="container">
+		<div class="col-lg-12 mt-4" style="border-radius: 30px;">
+			<form method="post" action="writeAction.jsp">
+				<table class="table table-striped" style="text-align: center; border: 1px solid #dddddd">
+					<thead>
+						<tr>
+							<th colspan="2" style="background-color: #eeeeee; text-align: center">게시판 글쓰기 양식</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+							<input type="text" class="form-control"
+								placeholder="글 제목" name="bbsTitle" maxlength="50">
+							</td>
+						</tr>
+						<tr>
+							<td>
+							<textarea class="form-control" placeholder="글 내용" name="bbsContent" maxlength="2048" style="height: 350px;"></textarea>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<!-- 글쓰기 버튼 -->
+				<input type="submit" class="btn btn-primary pull-right mb-3" value="글쓰기">
+			</form>
+		</div>
 	</div>
-	
-<footer class="py-5 bg-dark">
+
+	<footer class="py-5 bg-dark">
 		<div class="container">
 			<p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p>
 		</div>
