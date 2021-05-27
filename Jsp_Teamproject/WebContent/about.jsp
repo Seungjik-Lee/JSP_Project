@@ -85,12 +85,11 @@ String userID = (String) session.getAttribute("id");
                 </ol>
                 <!-- Intro Content-->
                 <div class="row">
-                    <div class="col-lg-6"><img class="img-fluid rounded mb-4" src="https://via.placeholder.com/750x450" alt="..." /></div>
+                    <div class="col-lg-6"><img class="img-fluid rounded mb-4" src="./img/프로젝트.jpg" alt="..." /></div>
                     <div class="col-lg-6">
                         <h2>About This Project</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptate nihil eum consectetur similique? Consectetur, quod, incidunt, harum nisi dolores delectus reprehenderit voluptatem perferendis dicta dolorem non blanditiis ex fugiat.</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, magni, aperiam vitae illum voluptatum aut sequi impedit non velit ab ea pariatur sint quidem corporis eveniet. Odit, temporibus reprehenderit dolorum!</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti eum ratione ex ea praesentium quibusdam? Aut, in eum facere corrupti necessitatibus perspiciatis quis?</p>
                     </div>
                 </div>
             </div>
