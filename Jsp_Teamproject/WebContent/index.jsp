@@ -56,7 +56,7 @@
 					} else {
 				%>
 					<li class="nav-item"><a class="nav-link" href="about.jsp">About</a></li>
-					<li class="nav-item"><a class="nav-link" href="faq.jsp">FAQ</a></li>
+					<li class="nav-item"><a class="nav-link" href="bbs/bbs.jsp">board</a></li>
 					<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Designated Hospital</a>
 						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
@@ -95,7 +95,7 @@
 					<img class="d-block w-100"
 						src="./img/용인세브란스.jpg" alt="..." />
 					<div class="carousel-caption d-none d-md-block">
-						<h3>First Slide</h3>
+						<h3>용인세브란스병원</h3>
 						<p>This is a description for the first slide.</p>
 					</div>
 				</div>
@@ -103,7 +103,7 @@
 					<img class="d-block w-100"
 						src="./img/연세세브란스.jpg" alt="..." />
 					<div class="carousel-caption d-none d-md-block">
-						<h3>Second Slide</h3>
+						<h3>연세세브란스병원</h3>
 						<p>This is a description for the second slide.</p>
 					</div>
 				</div>
@@ -111,7 +111,7 @@
 					<img class="d-block w-100"
 						src="./img/분당서울병원.jpg" alt="..." />
 					<div class="carousel-caption d-none d-md-block">
-						<h3>Third Slide</h3>
+						<h3>분당서울대병원</h3>
 						<p>This is a description for the third slide.</p>
 					</div>
 				</div>
