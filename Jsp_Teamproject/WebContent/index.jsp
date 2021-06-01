@@ -20,7 +20,19 @@
 	src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Core theme JS-->
 <script src="js/scripts.js"></script>
-
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#grp').on('click', function(){
+			location.href='graph/grp.jsp';
+		});
+		$('#addr').on('click', function(){
+			location.href='graph/addr.jsp';
+		});
+		$('#unit').on('click', function(){
+			location.href='graph/unit.jsp';
+		});
+	});
+</script>
 <title>Insert title here</title>
 </head>
 <body>
@@ -130,18 +142,17 @@
 	<!-- Page Content-->
 	<section class="py-5">
 		<div class="container">
-			<h1 class="mb-4">여기에 그래프를 그릴까요?</h1>
+			<h1 class="mb-4">건강보험심사평가원 전문병원 지정 현황</h1>
 			<!-- Marketing Icons Section-->
 			<div class="row">
 				<div class="col-lg-4 mb-4 mb-lg-0">
 					<div class="card h-100">
 						<h4 class="card-header">진료파트별</h4>
 						<div class="card-body">
-							<p class="card-text">Lorem ipsum dolor sit amet, consectetur
-								adipisicing elit. Sapiente esse necessitatibus neque.</p>
+							<p class="card-text">진찰과 치료가 필요한 여러 전문 분야별 분포를 보여드립니다.</p>
 						</div>
 						<div class="card-footer">
-							<a class="btn btn-primary" href="#!">Go To See</a>
+							<input class="btn btn-success" type="button" value="여기요" id="grp"/>
 						</div>
 					</div>
 				</div>
@@ -149,14 +160,10 @@
 					<div class="card h-100">
 						<h4 class="card-header">지역별</h4>
 						<div class="card-body">
-							<p class="card-text">Lorem ipsum dolor sit amet, consectetur
-								adipisicing elit. Reiciendis ipsam eos, nam perspiciatis natus
-								commodi similique totam consectetur praesentium molestiae atque
-								exercitationem ut consequuntur, sed eveniet, magni nostrum sint
-								fuga.</p>
+							<p class="card-text">전국의 지정 병원들 중, 지역별 분포를 보여드립니다.</p>
 						</div>
 						<div class="card-footer">
-							<a class="btn btn-primary" href="#!">Go To See</a>
+							<input class="btn btn-success" type="button" value="여기요" id="addr"/>
 						</div>
 					</div>
 				</div>
@@ -164,11 +171,15 @@
 					<div class="card h-100">
 						<h4 class="card-header">기수별</h4>
 						<div class="card-body">
-							<p class="card-text">Lorem ipsum dolor sit amet, consectetur
-								adipisicing elit. Sapiente esse necessitatibus neque.</p>
+							<p class="card-text">
+							심평원이 지정한 기수별 기간 현황<br>
+							(1기) 2011.11월~2014.10월 <br>
+							(2기) 2015~2017년 <br>
+							(3기) 2018~2020년 <br>
+							(4기) 2021~2023년</p>
 						</div>
 						<div class="card-footer">
-							<a class="btn btn-primary" href="#!">Go To See</a>
+							<input class="btn btn-success" type="button" value="여기요" id="unit"/>
 						</div>
 					</div>
 				</div>

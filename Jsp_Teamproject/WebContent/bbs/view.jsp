@@ -1,3 +1,6 @@
+<%@page import="java.util.ArrayList"%>
+<%@page import="JspTeam.SB_DB"%>
+<%@page import="JspTeam.SB_DAO"%>
 <%@ page import="java.io.PrintWriter" %>
 <%@ page import="JspTeam.BBS_DAO" %>
 <%@ page import="JspTeam.BBS_DB" %>
@@ -44,6 +47,7 @@
 		
 		//유효한 글이라면 구체적인 정보를 'bbs'라는 인스턴스에 담는다.
 		BBS_DB bbs = new BBS_DAO().getBbs(bbsID);
+		SB_DB sb = new SB_DAO().getsb(bbsID);
 	%>
 	<!-- Navigation-->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -137,6 +141,59 @@
 			<%
 				}
 			%>
+				<div class="container">
+		<div class="row mt-2">
+			<table class="table table-striped" style="text-align: center; border: 1px solid #dddddd">
+				<thead>
+					<tr>						
+						<th style="background-color: #eeeeee; text-align: center;">내용</th>
+						<th style="background-color: #eeeeee; text-align: center;">작성자</th>
+						
+					</tr>
+				</thead>
+				<tbody>
+				<%
+				if(sb!=null){
+					
+				
+				if(bbsID != 0 &&bbsID==sb.getBbsID()){
+		  		%>
+				<%
+					SB_DAO sbDao = new SB_DAO();
+					ArrayList<SB_DB> list = sbDao.getList(bbsID);
+					for(int i = 0; i < list.size(); i++) {
+				%>
+					<tr>
+						<td><%= list.get(i).getSbContent() %></td>
+						<td><%= list.get(i).getUserID() %></td>
+						
+					</tr>
+					<%
+					}
+					%>
+				<%
+				}
+				}
+			%>
+			   </tbody>
+			</table>
+		<div class="container mt-1 ">
+			<form method="post" action="sbWriteAction.jsp">
+				<table class="table table-striped" style="text-align: center; border: 1px solid #dddddd">					
+					<tbody>													
+						<tr>
+							<td><textarea class="form-control" placeholder="댓글 " name="sbContent" maxlength="1024" style="height: 350px;"></textarea></td> 
+							<input id = "bbsID" name = "bbsID" style="display:none" value="<%=bbsID%>" >
+						</tr>
+					</tbody>
+				</table>
+				<!-- 글쓰기 버튼 -->
+				<input type="submit" class="btn btn-primary pull-right mb-4" value="댓글쓰기">
+			</form>
+		</div>							
+															
+		</div>
+	</div>
 		</div>
 	</div>
 	

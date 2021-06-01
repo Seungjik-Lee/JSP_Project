@@ -1,6 +1,8 @@
 <%@ page import="java.io.PrintWriter" %>
 <%@ page import="JspTeam.BBS_DAO" %>
 <%@ page import="JspTeam.BBS_DB" %>
+<%@page import="JspTeam.SB_DB"%>
+<%@page import="JspTeam.SB_DAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <% request.setCharacterEncoding("utf-8"); %>
 <!DOCTYPE html>
@@ -47,6 +49,8 @@
 			} else{
 				// 글 삭제 로직을 수행한다
 				BBS_DAO bbsDAO = new BBS_DAO();
+				SB_DAO sbDAO = new SB_DAO();
+				int result1 = sbDAO.delete(bbsID);
 				int result = bbsDAO.delete(bbsID);
 				// 데이터베이스 오류인 경우
 				if(result == -1){
