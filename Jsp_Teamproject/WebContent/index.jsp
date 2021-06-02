@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html lang="kr">
 <head>
@@ -22,13 +23,13 @@
 <script src="js/scripts.js"></script>
 <script type="text/javascript">
 	$(document).ready(function(){
-		$('#grp').on('click', function(){
-			location.href='graph/grp.jsp';
+		$('#grp').on('click', function(){			
+			location.href='graph/grp.jsp';			
 		});
 		$('#addr').on('click', function(){
-			location.href='graph/addr.jsp';
+			location.href='graph/addr.jsp';			
 		});
-		$('#unit').on('click', function(){
+		$('#unit').on('click', function(){			
 			location.href='graph/unit.jsp';
 		});
 	});
@@ -79,7 +80,7 @@
 					</li>
 
 					<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><%=userID%>님</a>
+					<a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">반갑습니다.<%=userID%>님</a>
 						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
 							<a class="dropdown-item" href="member/logout.jsp">logout</a>
 							<a class="dropdown-item" href="#">Withdrawal</a>
@@ -152,7 +153,7 @@
 							<p class="card-text">진찰과 치료가 필요한 여러 전문 분야별 분포를 보여드립니다.</p>
 						</div>
 						<div class="card-footer">
-							<input class="btn btn-success" type="button" value="여기요" id="grp"/>
+							<input class="btn btn-secondary" type="button" value="View" id="grp"/>
 						</div>
 					</div>
 				</div>
@@ -163,7 +164,7 @@
 							<p class="card-text">전국의 지정 병원들 중, 지역별 분포를 보여드립니다.</p>
 						</div>
 						<div class="card-footer">
-							<input class="btn btn-success" type="button" value="여기요" id="addr"/>
+							<input class="btn btn-secondary" type="button" value="View" id="addr"/>
 						</div>
 					</div>
 				</div>
@@ -179,7 +180,7 @@
 							(4기) 2021~2023년</p>
 						</div>
 						<div class="card-footer">
-							<input class="btn btn-success" type="button" value="여기요" id="unit"/>
+							<input class="btn btn-secondary" type="button" value="View" id="unit"/>
 						</div>
 					</div>
 				</div>
