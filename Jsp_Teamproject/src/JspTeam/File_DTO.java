@@ -4,6 +4,9 @@ public class File_DTO {
 	
 	String FileName;
 	String FileRealName;
+	int downloadCount;
+	
+	
 	
 	public String getFileName() {
 		return FileName;
@@ -17,11 +20,18 @@ public class File_DTO {
 	public void setFileRealName(String fileRealName) {
 		FileRealName = fileRealName;
 	}
-	
-	public File_DTO(String fileName, String fileRealName) {
+	public int getDownloadCount() {
+		return downloadCount;
+	}
+	public void setDownloadCount(int downloadCount) {
+		this.downloadCount = downloadCount;
+	}
+
+	public File_DTO(String fileName, String fileRealName, int downloadCount) {
 		super();
-		FileName = fileName;
-		FileRealName = fileRealName;
+		this.FileName = fileName;
+		this.FileRealName = fileRealName;
+		this.downloadCount = downloadCount;
 	}
 	
 }
