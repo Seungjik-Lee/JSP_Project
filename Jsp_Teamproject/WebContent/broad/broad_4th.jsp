@@ -9,10 +9,8 @@
 	String addr = request.getParameter("addr");
 	List<BroadDB> list = null;
 	
-	if(addr == null){
+	if(addr == null)
 		list = bdbm.select();
-		addr="";
-	}
 	else
 		list = bdbm.select2(addr);
 %>
