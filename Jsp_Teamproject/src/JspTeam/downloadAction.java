@@ -47,7 +47,6 @@ public class downloadAction extends HttpServlet {
 		while((data = (fileInputStream.read(b, 0, b.length))) != -1) {
 			servletOutputStream.write(b, 0, data);
 		}
-		new File_DAO().hit(FileName);
 		
 		servletOutputStream.flush();
 		servletOutputStream.close();

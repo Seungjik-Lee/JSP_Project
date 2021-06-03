@@ -9,8 +9,10 @@
 	String addr = request.getParameter("addr");
 	List<BroadDB> list = null;
 	
-	if(addr == null)
+	if(addr == null){
 		list = bdbm.select();
+		addr="";
+	}
 	else
 		list = bdbm.select2(addr);
 %>
@@ -100,7 +102,7 @@
 		<p>병원리스트</p>
 		<div class="container">
 			<div class="form-inline mb-4">
-				<input type="text" class="form-control col-md-10 mb-2 my-4 mr-4" placeholder="Enter search" id="hosp_addr" value="<%=addr%>" />
+				<input type="text" class="form-control col-md-10 mb-2 my-4 mr-4" placeholder="Enter search" id="hosp_addr" value="<%=addr%>"/>
 				<input type="button" value="검색" id="search" class="btn btn-primary" />
 			</div>
 		</div>

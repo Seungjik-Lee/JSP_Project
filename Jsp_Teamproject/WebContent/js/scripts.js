@@ -88,9 +88,9 @@ function doGraGrp(dataSet){
     			return color[i];
     	})
 	    .transition()
-	    .duration(50)
+	    .duration(1000)
 	    .delay(function(d, i) {
-	        return i * 50;
+	        return i * 1000;
 	    })
 	    .attrTween("d", function(d, i) {// 보간처리
 	        var interpolate = d3.interpolate(
@@ -123,8 +123,8 @@ function doGraAddr(dataset){
 	    .data(dataset)
 	    .style("height","5%")
 	    .style("left",(d,i)=>(i*80)+"px")
-	    .transition().duration(500)
-	    .style("height",(d,i)=>d+"%")
+	    .transition().duration(1500)
+	    .style("height",(d,i)=>d+"%");
 	
 	var svg = 
 	       d3.select("span")
@@ -133,12 +133,12 @@ function doGraAddr(dataset){
 	         .attr("height", 500)
 	         
 	var yScale = d3.scaleLinear()
-	.domain([0, d3.max(dataset)]).range([500, 0]) 
+	.domain([0, d3.max(dataset)]).range([500, 0]);   
 	
-	var yAxis = d3.axisLeft().scale(yScale)
+	var yAxis = d3.axisLeft().scale(yScale);
 	         
 	svg.append("g")
 	   .attr("transform", "translate(0, -50)")
-	   .call(yAxis)
+	   .call(yAxis);
 	
 }

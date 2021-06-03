@@ -1,16 +1,15 @@
 <%@page import="java.util.List"%>
-<%@page import="JspTeam.GraphDB"%>
+<%@page import="JspTeam.grp_entity"%>
 <%@page import="java.util.ArrayList"%>
-<%@page import="JspTeam.GraphDBM"%>
+<%@page import="JspTeam.BroadDBM"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%>
 
 <%
-	GraphDBM bdbm = new GraphDBM();
+	BroadDBM bdbm = new BroadDBM();
 	String ret = bdbm.selectAddr();
-	ArrayList<GraphDB> list = bdbm.selectAddr2();
+	ArrayList<grp_entity> list = bdbm.selectAddr2();
 %>
-
 <!DOCTYPE html>
 <html lang="kr">
 <head>
@@ -33,184 +32,83 @@
 <script src="../js/scripts.js"></script>
 <script src="https://d3js.org/d3.v6.min.js"></script>
 <style type="text/css">
-.blue {
-	background: #5abae6;
+
+.blue   { background: #5abae6; }
+.red    { background: #d34e4e; }
+.green  { background: #9dbb19; }
+.yellow { background: #f7b358; }
+
+span{
+    position: absolute;
+    display: inline-block;
+    width: 60px;
+    bottom: 0;
+    font-size: 15px;
+    line-height: 1.8em;
+    /* color: #FFF; */
+    text-align: center;
+    border-radius: 15px;	
 }
 
-.red {
-	background: #d34e4e;
+.grdiv{
+    position: relative;
+    height: 450px;
+    top:10%;
+    left:10%;
 }
 
-.green {
-	background: #9dbb19;
-}
-
-.yellow {
-	background: #f7b358;
-}
-
-span {
-	position: absolute;
-	display: inline-block;
-	width: 60px;
-	bottom: 0;
-	font-size: 15px;
-	line-height: 1.8em;
-	color: #FFF;
-	text-align: center;
-	border-radius: 15px;
-}
-
-.grdiv {
-	position: relative;
-	height: 450px;
-}
 </style>
 </head>
 <body>
-	<%
-		// 메인 페이지로 이동했을 때 세션에 값이 담겨있는지 체크
-		String userID = null;
-		if (session.getAttribute("id") != null) {
-			userID = (String) session.getAttribute("id");
+<%
+	int count = 0;
+	int sum=0;
+   	String color[] = {"blue","red","green","yellow"};
+   	ArrayList<String> color1 = new ArrayList<String>();
+	for(int i=0; i<list.size(); i++){
+		color1.add(i,color[count]);
+		count++;
+		
+		if(count>3){
+	count=0;
 		}
-	%>
-	<!-- Navigation-->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<div class="container">
-			<a class="navbar-brand" href="../index.jsp">JSP TeamProject</a>
-			<button class="navbar-toggler navbar-toggler-right" type="button"
-				data-toggle="collapse" data-target="#navbarResponsive"
-				aria-controls="navbarResponsive" aria-expanded="false"
-				aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarResponsive">
-				<ul class="navbar-nav ml-auto">
-					<%
-						// 로그인 하지 않았을 때 보여지는 화면
-						if (userID == null) {
-					%>
-					<li class="nav-item dropdown"><a
-						class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#"
-						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sign</a>
-						<div class="dropdown-menu dropdown-menu-right"
-							aria-labelledby="navbarDropdownBlog">
-							<a class="dropdown-item" href="../member/signin.jsp">Join</a> <a
-								class="dropdown-item" href="../member/login.jsp">Login</a>
-						</div></li>
-					<%
-						// 로그인이 되어 있는 상태에서 보여주는 화면
-						} else {
-					%>
-					<li class="nav-item"><a class="nav-link" href="../about.jsp">About</a></li>
-					<li class="nav-item"><a class="nav-link" href="../bbs/bbs.jsp">board</a></li>
-					<li class="nav-item dropdown"><a
-						class="nav-link dropdown-toggle" id="navbarDropdownPortfolio"
-						href="#" data-toggle="dropdown" aria-haspopup="true"
-						aria-expanded="false">Designated Hospital</a>
-						<div class="dropdown-menu dropdown-menu-right"
-							aria-labelledby="navbarDropdownPortfolio">
-							<a class="dropdown-item" href="broad_1st.jsp">1st Designated
-								Hospital</a> <a class="dropdown-item" href="broad_2nd.jsp">2nd
-								Designated Hospital</a> <a class="dropdown-item"
-								href="broad_3rd.jsp">3rd Designated Hospital</a> <a
-								class="dropdown-item" href="broad_4th.jsp">4th Designated
-								Hospital</a>
-						</div></li>
-
-					<li class="nav-item dropdown"><a
-						class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#"
-						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">반갑습니다.
-							<%=userID%>님
-					</a>
-						<div class="dropdown-menu dropdown-menu-right"
-							aria-labelledby="navbarDropdownBlog">
-							<a class="dropdown-item" href="../member/logout.jsp">logout</a> <a
-								class="dropdown-item" href="#">Withdrawal</a>
-						</div></li>
-					<%
-						}
-					%>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<%
-		// 로그인 하지 않았을 때 보여지는 화면
-		if (userID == null) {
-	%>
-	<script>
-		alert('로그인해야합니다.');
-		location.href = '../index.jsp';
-	</script>
-	<%
-		}
-	%>
-	<%
-		int count = 0;
-		int sum = 0;
-		String color[] = { "blue", "red", "green", "yellow" };
-		ArrayList<String> color1 = new ArrayList<String>();
-		for (int i = 0; i < list.size(); i++) {
-			color1.add(i, color[count]);
-			count++;
-
-			if (count > 3) {
-				count = 0;
-			}
-			//System.out.println(count);
-			//System.out.println(color1);
-		}
-	%>
+		//System.out.println(count);
+		//System.out.println(color1);
+	}
+%>
 	<div class="jumbotron">
 		<p>전국 시,도 지역별 지정 병원 현황</p>
-		<div class="grdiv text-center">
-			<%
-				for (int i = 0; i < 10; i++) {
-					GraphDB ct = list.get(i);
-			%>
-			<span class="<%out.println(color1.get(i));%>"><%=ct.getCityName()%><br />
-				<%=ct.getCityNum()%> </span>
-			<%
-				}
-			%>
-			<p><전국 시,도 지역별 지정 병원 수 상위 10개 그래프></p>
-		</div>
-		<p></p>
-		<div class="container">
-			<table class="table table-hover">
-				<thead>
-					<tr>
-						<th>지역이름</th>
-						<th>지정병원 수</th>
-					</tr>
-				</thead>
-				<tbody>
-					<%
-						for (int i = 0; i < list.size(); i++) {
-					%>
-					<tr>
-						<td><%=list.get(i).getCityName()%></td>
-						<td><%=list.get(i).getCityNum()%></td>
-					</tr>
-					<%
-						}
-					%>
-				</tbody>
-			</table>
-			<p>총 지정병원 수 : 420개</p>
-		</div>
-		</div>
-		<!-- Footer-->
-		<footer class="py-5 bg-dark">
-			<div class="container">
-				<p class="m-0 text-center text-white">Copyright &copy; Your
-					Website 2021</p>
-			</div>
-		</footer>
-
-	
+	</div>
+	<div class="grdiv ml-3">
+	<%
+		for(int i =0; i<11;i++){
+			grp_entity ct = list.get(i);
+	%>
+	<span class="<%out.println(color1.get(i));%>"><%=ct.getCityName()%><br/><%=ct.getCityNum()%> </span>
+	<%} %>	
+	</div>
+	<p></p>
+	<div class="container">
+	 <table class = "table table-hover">
+			<thead>
+				<tr>
+					<th>지역이름</th>
+					<th>지정병원 수</th>
+				</tr>
+			</thead>
+			<tbody>
+			<% for (int i=0; i<list.size(); i++){ %>
+				<tr>
+					<td><%=list.get(i).getCityName()%></td>
+					<td><%=list.get(i).getCityNum()%></td>
+				</tr>
+			<% } %>
+			</tbody>
+	</table>
+   	<p>
+   	총 지정병원 수 : 420개
+   	</p>
+	</div>
 </body>
 </html>
 <script type="text/javascript">

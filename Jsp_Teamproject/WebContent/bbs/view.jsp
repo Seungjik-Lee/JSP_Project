@@ -146,8 +146,8 @@
 			<table class="table table-striped" style="text-align: center; border: 1px solid #dddddd">
 				<thead>
 					<tr>						
-						<th style="background-color: #eeeeee; text-align: center; width:75%;">내용</th>
-						<th style="background-color: #eeeeee; text-align: center; width:25%">작성자</th>
+						<th style="background-color: #eeeeee; text-align: center;">내용</th>
+						<th style="background-color: #eeeeee; text-align: center;">작성자</th>
 						
 					</tr>
 				</thead>
