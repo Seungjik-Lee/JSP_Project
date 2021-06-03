@@ -58,6 +58,7 @@
                                 alert(resp);
                                 $('#OK').removeAttr( 'disabled' );
                                 $('#reLoad').attr('disabled',true);
+                                $('#frmSubmit').attr('disabled',true);
                           },
                           error: function(){
                               alert("실패?");
@@ -209,16 +210,32 @@
 </body>
 <script type="text/javascript">
 	$('#pw1').keyup(function() {
-		if ($('#pw').val() == $('#pw1').val())
+		if ($('#pw').val() == $('#pw1').val()){
 			$('#check').text("비밀번호가 일치합니다.")
+			$('#check').attr("class","text-success")
+		}
 
-		else
+		else{
 			$('#check').text("비밀번호가 다릅니다.")
-
+			$('#check').attr("class","text-danger")
+		}
 		if ($('#pw1').val() == "")
 			$('#check').text("")
 	})
 
+		$('#pw').keyup(function() {
+		if ($('#pw').val() == $('#pw1').val()){
+			$('#check').text("비밀번호가 일치합니다.")
+			$('#check').attr("class","text-success")
+		}
+
+		else{
+			$('#check').text("비밀번호가 다릅니다.")
+			$('#check').attr("class","text-danger")
+		}
+		if ($('#pw').val() == "")
+			$('#check').text("")
+	})
 	$('#OK').click(function() {
 		if ($('#pw').val() != $('#pw1').val()) {
 			alert("비밀번호가 다릅니다.")
