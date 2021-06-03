@@ -48,8 +48,8 @@
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sign</a>
 						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-							<a class="dropdown-item" href="member/signin.jsp">Join</a>
-							<a class="dropdown-item" href="member/login.jsp">Login</a>
+							<a class="dropdown-item" href="./signup.jsp">Join</a>
+							<a class="dropdown-item" href="./login.jsp">Login</a>
 						</div>
 					</li>
 				<%
