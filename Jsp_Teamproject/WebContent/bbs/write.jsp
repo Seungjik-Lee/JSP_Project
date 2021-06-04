@@ -49,7 +49,7 @@
 					} else {
 				%>
 					<li class="nav-item"><a class="nav-link" href="../about.jsp">About</a></li>
-					<li class="nav-item"><a class="nav-link" href="../faq.jsp">FAQ</a></li>
+					<li class="nav-item"><a class="nav-link" href="bbs.jsp">Board</a></li>
 					<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Designated Hospital</a>
 						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">

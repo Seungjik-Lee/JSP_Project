@@ -79,10 +79,7 @@ span {
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container">
 			<a class="navbar-brand" href="../index.jsp">JSP TeamProject</a>
-			<button class="navbar-toggler navbar-toggler-right" type="button"
-				data-toggle="collapse" data-target="#navbarResponsive"
-				aria-controls="navbarResponsive" aria-expanded="false"
-				aria-label="Toggle navigation">
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarResponsive">
@@ -105,30 +102,22 @@ span {
 					%>
 					<li class="nav-item"><a class="nav-link" href="../about.jsp">About</a></li>
 					<li class="nav-item"><a class="nav-link" href="../bbs/bbs.jsp">board</a></li>
-					<li class="nav-item dropdown"><a
-						class="nav-link dropdown-toggle" id="navbarDropdownPortfolio"
-						href="#" data-toggle="dropdown" aria-haspopup="true"
-						aria-expanded="false">Designated Hospital</a>
-						<div class="dropdown-menu dropdown-menu-right"
-							aria-labelledby="navbarDropdownPortfolio">
-							<a class="dropdown-item" href="broad_1st.jsp">1st Designated
-								Hospital</a> <a class="dropdown-item" href="broad_2nd.jsp">2nd
-								Designated Hospital</a> <a class="dropdown-item"
-								href="broad_3rd.jsp">3rd Designated Hospital</a> <a
-								class="dropdown-item" href="broad_4th.jsp">4th Designated
-								Hospital</a>
-						</div></li>
-
-					<li class="nav-item dropdown"><a
-						class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#"
-						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">반갑습니다.
-							<%=userID%>님
-					</a>
-						<div class="dropdown-menu dropdown-menu-right"
-							aria-labelledby="navbarDropdownBlog">
-							<a class="dropdown-item" href="../member/logout.jsp">logout</a> <a
-								class="dropdown-item" href="#">Withdrawal</a>
-						</div></li>
+					<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Designated Hospital</a>
+						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+							<a class="dropdown-item" href="broad_1st.jsp">1st Designated Hospital</a>
+							<a class="dropdown-item" href="broad_2nd.jsp">2nd Designated Hospital</a>
+							<a class="dropdown-item" href="broad_3rd.jsp">3rd Designated Hospital</a>
+							<a class="dropdown-item" href="broad_4th.jsp">4th Designated Hospital</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">반갑습니다. <%=userID%>님</a>
+						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+							<a class="dropdown-item" href="../member/logout.jsp">logout</a>
+							<a class="dropdown-item" href="#">Withdrawal</a>
+						</div>
+					</li>
 					<%
 						}
 					%>
@@ -210,7 +199,6 @@ span {
 			</div>
 		</footer>
 
-	
 </body>
 </html>
 <script type="text/javascript">
