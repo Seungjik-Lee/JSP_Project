@@ -2,6 +2,7 @@
 <%@ page import="JspTeam.BBS_DAO" %>
 <%@ page import="JspTeam.BBS_DB" %>
 <%@ page import="java.util.ArrayList" %>
+ <jsp:useBean id="dao" class="JspTeam.BBS_DAO" />
 <!DOCTYPE html>
 <html lang="kr">
 <head>
@@ -18,11 +19,27 @@
 <!-- Core theme JS-->
 <script src="../js/scripts.js"></script>
 
+<script>
+
+function searchCheck(){
+    //검색
+    var frm = document.getElementById('frm');
+    if(frm.keyWord.value ==""){
+        alert("검색 단어를 입력하세요.");
+        frm.keyWord.focus();
+        return;
+    }
+    frm.submit();      
+}
+
+</script>
+
 <title>Insert title here</title>
 
 </head>
 <body>
 	<%
+
 		// 메인 페이지로 이동했을 때 세션에 값이 담겨있는지 체크
 		String userID = null;
 		if (session.getAttribute("id") != null) {
@@ -33,7 +50,14 @@
 		if(request.getParameter("pageNumber") != null) {
 			pageNumber = Integer.parseInt(request.getParameter("pageNumber"));
 		}
+		  String keyField = request.getParameter("keyField");
+		  String keyWord = request.getParameter("keyWord");
+		  ArrayList<BBS_DB> list = dao.getMemberlist(keyField, keyWord);
 	%>
+	<script type="text/javascript">
+	var aa=<%=keyField%>
+	var bb =<%=keyWord%>
+	</script>
 	<!-- Navigation-->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container">
@@ -90,6 +114,20 @@
 			<table class="table table-striped" style="text-align: center; border: 1px solid #dddddd">
 				<thead>
 					<tr>
+						<td colspan="7"><br />
+							<form id="frm" name="serach" method="get">
+								<select name="keyField">
+									<option value="0">----선택----</option>
+									<option value="userID">작성자</option>
+									<option value="bbsTitle">제목</option>
+									<option value="bbsContent">내용</option>
+								</select>
+								<input type="text" name="keyWord" />
+								<input type="button" value="검색" onclick="searchCheck(form)" />
+							</form>
+						</td>
+					</tr>
+					<tr>
 						<th style="background-color: #eeeeee; text-align: center;">번호</th>
 						<th style="background-color: #eeeeee; text-align: center;">제목</th>
 						<th style="background-color: #eeeeee; text-align: center;">작성자</th>
@@ -99,15 +137,25 @@
 				<tbody>
 				<%
 					BBS_DAO bbsDao = new BBS_DAO();
-					ArrayList<BBS_DB> list = bbsDao.getList(pageNumber);
-					for(int i = 0; i < list.size(); i++) {
+					ArrayList<BBS_DB> list1 = bbsDao.getList(pageNumber);
+					
+					keyField = request.getParameter("keyField");
+					keyWord = request.getParameter("keyWord");
+					list = dao.getMemberlist(keyField, keyWord);
+					
+					if (keyField!=null){
+						list1 = list;
+					}
+					  
+					  
+					for(int i = 0; i < list1.size(); i++) {
 				%>
 					<tr>
-						<td><%= list.get(i).getBbsID() %></td>
-						<td><a href="view.jsp?bbsID=<%= list.get(i).getBbsID() %>">
-							<%= list.get(i).getBbsTitle() %></a></td>
-						<td><%= list.get(i).getUserID() %></td>
-						<td><%= list.get(i).getBbsDate().substring(0, 11) + list.get(i).getBbsDate().substring(11, 13) + "시" + list.get(i).getBbsDate().substring(14, 16) + "분" %></td>
+						<td><%= list1.get(i).getBbsID() %></td>
+						<td><a href="view.jsp?bbsID=<%= list1.get(i).getBbsID() %>">
+							<%= list1.get(i).getBbsTitle() %></a></td>
+						<td><%= list1.get(i).getUserID() %></td>
+						<td><%= list1.get(i).getBbsDate().substring(0, 11) + list1.get(i).getBbsDate().substring(11, 13) + "시" + list1.get(i).getBbsDate().substring(14, 16) + "분" %></td>
 					</tr>
 					<%
 					}

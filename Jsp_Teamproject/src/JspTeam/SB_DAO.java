@@ -42,8 +42,7 @@ public class SB_DAO {
 		String sql4 = "select * from sb where bbsID="+pageNumber;
 		ArrayList<SB_DB> list = new ArrayList<SB_DB>();
 		try {
-			PreparedStatement pstmt = conn.prepareStatement("set time_zone = 'Asia/Seoul'");
-			pstmt.executeUpdate();
+			PreparedStatement pstmt = conn.prepareStatement(sql4);
 			
 			pstmt = conn.prepareStatement(sql4);			
 			rs = pstmt.executeQuery();
@@ -67,8 +66,7 @@ public class SB_DAO {
 		String sql6 = "select * from sb where bbsID = ?";
 		
 		try {
-			PreparedStatement pstmt = conn.prepareStatement("set time_zone = 'Asia/Seoul'");
-			pstmt.executeUpdate();
+			PreparedStatement pstmt = conn.prepareStatement(sql6);
 			
 			pstmt = conn.prepareStatement(sql6);
 			pstmt.setInt(1, bbsID);

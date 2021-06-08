@@ -21,7 +21,7 @@ public class File_DAO {
 	}
 	
 	public int upload(String FileName, String FileRealName) {
-		String SQL = "INSERT INTO file VALUES (?, ?, 0)";
+		String SQL = "INSERT INTO file(FileName,FileRealName,downloadCount) VALUES (?, ?, 0)";
 		
 		try {
 			PreparedStatement pstmt = conn.prepareStatement(SQL);

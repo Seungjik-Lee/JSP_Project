@@ -4,11 +4,13 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.Statement;
 import java.util.ArrayList;
 
 public class BBS_DAO {
 	private Connection conn;
 	private ResultSet rs;
+	private Statement st;
 	
 	public BBS_DAO() {
 		try {
@@ -78,7 +80,7 @@ public class BBS_DAO {
 	//게시글 리스트 메소드
 	public ArrayList<BBS_DB> getList(int pageNumber) {
 		String sql4 = "select * from bbs where bbsID < ? and bbsAvailable = 1 order by bbsID desc limit 10";
-		ArrayList<BBS_DB> list = new ArrayList<BBS_DB>();
+		ArrayList<BBS_DB> list1 = new ArrayList<BBS_DB>();
 		try {
 			PreparedStatement pstmt = conn.prepareStatement(sql4);
 //			pstmt.executeUpdate();
@@ -95,12 +97,12 @@ public class BBS_DAO {
 				bbsdb.setBbsDate(rs.getString(4));
 				bbsdb.setBbsContent(rs.getString(5));
 				bbsdb.setBbsAvailable(rs.getInt(6));
-				list.add(bbsdb);
+				list1.add(bbsdb);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return list;
+		return list1;
 	}
 	
 	//페이징 처리 메소드
@@ -176,4 +178,40 @@ public class BBS_DAO {
 			}
 			return -1; //데이터베이스 오류 
 		}
+		
+	//게시글 검색 메소드
+		 public ArrayList<BBS_DB> getMemberlist(String keyField, String keyWord){
+		       
+		        ArrayList<BBS_DB> list = new ArrayList<BBS_DB>();
+		       
+		        try{//실행
+		           
+		            String sql ="select * from bbs ";
+		           
+		            if(keyWord != null && !keyWord.equals("") ){
+		                sql +="WHERE "+keyField.trim()+" LIKE '%"+keyWord.trim()+"%' order by userID";
+		            }else{//모든 레코드 검색
+		                sql +="order by userID";
+		            }
+		            System.out.println("sql = " + sql);
+		            st = conn.createStatement();
+		            rs = st.executeQuery(sql);
+		           
+		            while(rs.next()){
+		            	BBS_DB bdb = new BBS_DB();
+		            	
+		            	bdb.setBbsID(rs.getInt(1));
+		            	bdb.setBbsTitle(rs.getString(2));
+		            	bdb.setUserID(rs.getString(3));
+		            	bdb.setBbsDate(rs.getString(4));
+		            	bdb.setBbsContent(rs.getString(5));
+		            	bdb.setBbsAvailable(rs.getInt(6));
+		               
+		                list.add(bdb);
+		            }
+		        }catch(Exception e){           
+		            System.out.println(e+"=> getMemberlist fail");
+		        }    
+		        return list;
+		    }  
 }

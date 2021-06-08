@@ -282,19 +282,6 @@
 		</div>
 	</section>
 	<hr class="my-0" />
-	<!-- Call to Action-->
-<!-- 	<aside class="py-5 bg-light"> -->
-<!-- 		<div class="container"> -->
-<!-- 			<div class="row"> -->
-<!-- 				<div class="col-md-8"> -->
-<!-- 					<h3>병원 이용 후기</h3> -->
-<!-- 				</div> -->
-<!-- 				<div class="col-md-4"> -->
-<!-- 					<a class="btn btn-lg btn-secondary btn-block" href="bbs/bbs.jsp">게시판</a> -->
-<!-- 				</div> -->
-<!-- 			</div> -->
-<!-- 		</div> -->
-<!-- 	</aside> -->
 	<!-- Footer-->
 	<footer class="py-5 bg-dark">
 		<div class="container">

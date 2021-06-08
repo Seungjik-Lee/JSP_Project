@@ -166,12 +166,13 @@
 							name="phone" maxlength="20">
 					</div>
 					<div id="catpcha"></div>
-					<div id="audiocatpch" style="display: block;"></div>
+					<div id="audiocatpch" style="display: block;margin-top:10px;"></div>
 					<input id="reLoad" type="button" value="새로고침" />
 					 <input type="text" id="answer" name="answer" value="" /> 
 					 <input type="button" id="frmSubmit" value="확인" />
+					 <br>
 					<input type="submit" class="btn btn-primary form-control "
-						value="회원가입" id="OK"  disabled>
+						value="회원가입" id="OK"  disabled style="margin-top:20px;">
 				</form>
 			</div>
 		</div>

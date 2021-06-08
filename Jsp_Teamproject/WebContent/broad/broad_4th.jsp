@@ -9,10 +9,12 @@
 	String addr = request.getParameter("addr");
 	List<BroadDB> list = null;
 	
-	if(addr == null)
+	if(addr == null) {
 		list = bdbm.select();
-	else
+		addr="";
+	} else {
 		list = bdbm.select2(addr);
+	}
 %>
 
 <!DOCTYPE html>
@@ -96,23 +98,27 @@
 		</div>
 	</nav>
 	<div class="jumbotron">
-		<h1>4th Designated Hospital</h1>
-		<p>병원리스트</p>
 		<div class="container">
+			<h1>4th Designated Hospital</h1>
+			<p>병원리스트</p>
 			<div class="form-inline mb-4">
-				<input type="text" class="form-control col-md-10 mb-2 my-4 mr-4" placeholder="Enter search" id="hosp_addr" value="<%=addr%>" />
+				<input type="text" class="form-control col-md-10 mb-2 my-4 mr-4" placeholder="주소를 입력하세요" id="hosp_addr" value="<%=addr%>" />
 				<input type="button" value="검색" id="search" class="btn btn-primary" />
 			</div>
 		</div>
 		<table class="table table-dark table-hover text-center">
 			<thead>
 				<tr>
-					<th>기수</th><th>분류</th><th>이름</th><th>주소</th>
+					<th>기수</th>
+					<th>분류</th>
+					<th>이름</th>
+					<th>주소</th>
 				</tr>
 			</thead>
 			<tbody>
-				<% for (BroadDB bdb : list) { 
-					if(bdb.getUnit().equals("4기")) {
+				<%
+					for (BroadDB bdb : list) {
+						if (bdb.getUnit().equals("4기")) {
 				%>
 				<tr>
 					<td><%=bdb.getUnit()%></td>
@@ -120,8 +126,10 @@
 					<td><%=bdb.getName()%></td>
 					<td><%=bdb.getAddr()%></td>
 				</tr>
-				<% } 
-				}%>
+				<%
+						}
+					}
+				%>
 			</tbody>
 		</table>
 	</div>

@@ -128,6 +128,11 @@
 						<td colspan="2" style="height: 200px; text-align: left;"><%= bbs.getBbsContent().replaceAll(" ", "&nbsp;")
 							.replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll("\n", "<br>") %></td>
 					</tr>
+					<tr>
+						<td>첨부파일</td>
+						<td colspan="2">
+							<a href="<%=request.getContextPath()%>/downloadAction?file=bootstrap.png">bootstrap.png</a></td>
+					</tr>
 				</tbody>
 			</table>
 			<a href="bbs.jsp" class="btn btn-primary mb-3">목록</a>
@@ -182,7 +187,7 @@
 				<table class="table table-striped" style="text-align: center; border: 1px solid #dddddd">					
 					<tbody>													
 						<tr>
-							<td><textarea class="form-control" placeholder="댓글 " name="sbContent" maxlength="1024" style="height: 350px;"></textarea></td> 
+							<td><textarea class="form-control" placeholder="댓글 " name="sbContent" maxlength="1024" style="height: 100px;"></textarea></td> 
 							<input id = "bbsID" name = "bbsID" style="display:none" value="<%=bbsID%>" >
 						</tr>
 					</tbody>
