@@ -97,6 +97,17 @@
 			</div>
 		</div>
 	</nav>
+	<%
+		// 로그인 하지 않았을 때 보여지는 화면
+		if (userID == null) {
+	%>
+	<script>
+		alert('로그인해야합니다.');
+		location.href = '../index.jsp';
+	</script>
+	<%
+		}
+	%>
 	<div class="jumbotron">
 		<div class="container">
 			<h1>2nd Designated Hospital</h1>

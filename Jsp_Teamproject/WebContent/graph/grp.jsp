@@ -105,47 +105,43 @@
 	<%
 		}
 	%>
-	<div class="jumbotron">
-		<p>진료 파트별 지정 병원 현황</p>
-		<div class="container text-center">
-			<p>
-				<진료 파트별 병원 수의 상위 10개 지정 병원 현황>
-			</p>
+		<div class="jumbotron">
+		<h2>진료 파트별 지정 병원 현황</h2>
+			<div class="container text-center">
+				<p>
+					<진료 파트별 병원 수의 상위 10개 지정 병원 현황>
+				</p>
+			</div>
+			<div class="container one-graph text-center">
+				<table class="table table-dark table-hover text-center">
+					<thead>
+						<tr>
+							<th>진료파트</th>
+							<th>지정병원 수</th>
+						</tr>
+					</thead>
+					<tbody>
+						<%
+							for (int i = 0; i < list.size(); i++) {
+						%>
+						<tr>
+							<td><%=list.get(i).getGrpName()%></td>
+							<td><%=list.get(i).getGrpNum()%></td>
+						</tr>
+						<%
+							}
+						%>
+					</tbody>
+				</table>
+				<p>총 지정병원 수 : 420개</p>
+			</div>
 		</div>
-		<div class="container one-graph text-center"></div>
-
-		<table class="table table-hover">
-			<thead>
-				<tr>
-					<th>진료파트</th>
-					<th>지정병원 수</th>
-				</tr>
-			</thead>
-			<tbody>
-				<%
-					for (int i = 0; i < list.size(); i++) {
-				%>
-				<tr>
-					<td><%=list.get(i).getGrpName()%></td>
-					<td><%=list.get(i).getGrpNum()%></td>
-				</tr>
-				<%
-					}
-				%>
-			</tbody>
-		</table>
-		<p>
-			총 지정병원 수 : 420개
-		</p>
-	</div>
-	<!-- Footer-->
-	<footer class="py-5 bg-dark">
-		<div class="container">
-			<p class="m-0 text-center text-white">Copyright &copy; Your
-				Website 2021</p>
-		</div>
-	</footer>
-
+		<!-- Footer-->
+		<footer class="py-5 bg-dark">
+			<div class="container">
+				<p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p>
+			</div>
+		</footer>
 </body>
 </html>
 

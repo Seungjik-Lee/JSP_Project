@@ -103,5 +103,43 @@ public class CustomerDBM {
 		}
 		return -1;
 	}
-
+	
+	public int withdrawl(String id, String pw){
+		int result = -1;
+		String sql = "select pw from member where id=?";
+		
+		try {
+			conn = DriverManager.getConnection(DBinfo.mysql_url, DBinfo.mysql_id, DBinfo.mysql_pw);
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, id);
+			rs = pstmt.executeQuery();
+			if(rs.next()){
+				if(pw.equals(rs.getString("pw"))){
+					sql = "delete from member where id=?";
+					pstmt = conn.prepareStatement(sql);
+					pstmt.setString(1, id);
+					pstmt.executeUpdate();
+					result = 1;
+					System.out.println("회원삭제성공-아디일치,비번일치");
+				}else{
+					result = 0;
+				}
+			}else{
+				result = -1;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if (rs != null)
+					rs.close();
+				if (pstmt != null)
+					pstmt.close();
+				if (conn != null)
+					conn.close();
+			} catch (Exception e) {
+			}
+		}
+		return result;		
+	}
 }

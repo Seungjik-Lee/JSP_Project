@@ -179,7 +179,7 @@
 	</div>
 
 	<!-- Call to Action-->
-	<aside class="py-5 bg-light">
+<!-- 	<aside class="py-5 bg-light">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8">
@@ -190,7 +190,7 @@
 				</div>
 			</div>
 		</div>
-	</aside>
+	</aside> -->
 	<!-- Footer-->
 	<footer class="py-5 bg-dark">
 		<div class="container">

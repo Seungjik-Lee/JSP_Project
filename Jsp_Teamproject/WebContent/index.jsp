@@ -83,7 +83,7 @@
 					<a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">반갑습니다.<%=userID%>님</a>
 						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
 							<a class="dropdown-item" href="member/logout.jsp">logout</a>
-							<a class="dropdown-item" href="#">Withdrawal</a>
+							<a class="dropdown-item" href="member/withdrawl.jsp">Withdrawal</a>
 						</div>
 					</li>
 				<%
@@ -195,7 +195,7 @@
 			<div class="row">
 				<div class="col-lg-6 col-sm-6 mb-4">
 					<div class="card h-100">
-						<a href="#!"><img class="card-img-top"
+						<a href="broad/broad_1st.jsp"><img class="card-img-top"
 							src="./img/사진1.jpg" alt="..." /></a>
 						<div class="card-body">
 							<h4 class="card-title">
@@ -210,7 +210,7 @@
 				</div>
 				<div class="col-lg-6 col-sm-6 mb-4">
 					<div class="card h-100">
-						<a href="#!"><img class="card-img-top"
+						<a href="broad/broad_2nd.jsp"><img class="card-img-top"
 							src="./img/사진2.jpg" alt="..." /></a>
 						<div class="card-body">
 							<h4 class="card-title">
@@ -224,7 +224,7 @@
 				</div>
 				<div class="col-lg-6 col-sm-6 mb-4">
 					<div class="card h-100">
-						<a href="#!"><img class="card-img-top"
+						<a href="broad/broad_3rd.jsp"><img class="card-img-top"
 							src="./img/사진3.jpg" alt="..." /></a>
 						<div class="card-body">
 							<h4 class="card-title">
@@ -239,7 +239,7 @@
 				</div>
 				<div class="col-lg-6 col-sm-6 mb-4">
 					<div class="card h-100">
-						<a href="#!"><img class="card-img-top"
+						<a href="broad/broad_4th.jsp"><img class="card-img-top"
 							src="./img/사진4.jpg" alt="..." /></a>
 						<div class="card-body">
 							<h4 class="card-title">
@@ -254,9 +254,9 @@
 			</div>
 		</div>
 	</section>
-	<hr class="my-0" />
+<!-- 	<hr class="my-0" /> -->
 	<!-- Features Section-->
-	<section class="py-5">
+	<!-- <section class="py-5">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6">
@@ -280,8 +280,8 @@
 				</div>
 			</div>
 		</div>
-	</section>
-	<hr class="my-0" />
+	</section> -->
+<!-- 	<hr class="my-0" /> -->
 	<!-- Footer-->
 	<footer class="py-5 bg-dark">
 		<div class="container">

@@ -1,5 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ page import="java.io.PrintWriter"%>
+<%@ page import="JspTeam.CustomerDBM"%>
+<jsp:useBean id="user" class="JspTeam.CustomerDB" scope="page" />
+<jsp:setProperty name="user" property="id" />
+<jsp:setProperty name="user" property="pw" />
+<jsp:setProperty name="user" property="name" />
+<jsp:setProperty name="user" property="gender" />
+<jsp:setProperty name="user" property="phone" />
 <!DOCTYPE html>
 <html lang="kr">
 <head>
@@ -22,7 +30,6 @@
 <script src="../js/scripts.js"></script>
 
 <title>Insert title here</title>
-
 </head>
 <body>
 	<%
@@ -35,49 +42,48 @@
 	<!-- Navigation-->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container">
-			<a class="navbar-brand" href="../index.jsp">JSP TeamProject</a>
+			<a class="navbar-brand" href="index.jsp">JSP TeamProject</a>
 			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarResponsive">
-				<ul class="navbar-nav ml-auto">
-					<%
-						// 로그인 하지 않았을 때 보여지는 화면
-						if (userID == null) {
-					%>
-					<li class="nav-item dropdown"><a
-						class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#"
-						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sign</a>
-						<div class="dropdown-menu dropdown-menu-right"
-							aria-labelledby="navbarDropdownBlog">
-							<a class="dropdown-item" href="./signin.jsp">Join</a> <a
-								class="dropdown-item" href="./login.jsp">Login</a>
-						</div></li>
-					<%
-						// 로그인이 되어 있는 상태에서 보여주는 화면
-						} else {
-					%>
-					<li class="nav-item"><a class="nav-link" href="../about.jsp">About</a></li>
-					<li class="nav-item"><a class="nav-link" href="../bbs/bbs.jsp">board</a></li>
+				<ul class="navbar-nav ml-auto"> 
+				<%
+					// 로그인 하지 않았을 때 보여지는 화면
+					if (userID == null) {
+				%>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sign</a>
+						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+							<a class="dropdown-item" href="member/signup.jsp">Join</a>
+							<a class="dropdown-item" href="member/login.jsp">Login</a>
+						</div>
+					</li>
+				<%
+					// 로그인이 되어 있는 상태에서 보여주는 화면
+					} else {
+				%>
+					<li class="nav-item"><a class="nav-link" href="about.jsp">About</a></li>
+					<li class="nav-item"><a class="nav-link" href="bbs/bbs.jsp">board</a></li>
 					<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Designated Hospital</a>
 						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-							<a class="dropdown-item" href="../broad/broad_1st.jsp">1st Designated Hospital</a>
-							<a class="dropdown-item" href="../broad/broad_2nd.jsp">2nd Designated Hospital</a>
-							<a class="dropdown-item" href="../broad/broad_3rd.jsp">3rd Designated Hospital</a>
-							<a class="dropdown-item" href="../broad/broad_4th.jsp">4th Designated Hospital</a>
+							<a class="dropdown-item" href="broad/broad_1st.jsp">1st Designated Hospital</a> <a class="dropdown-item" href="broad/broad_2nd.jsp">2nd Designated Hospital</a>
+								<a class="dropdown-item" href="broad/broad_3rd.jsp">3rd Designated Hospital</a>
+								<a class="dropdown-item" href="broad/broad_4th.jsp">4th Designated Hospital</a>
 						</div>
 					</li>
+
 					<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">반갑습니다. <%=userID%>님</a>
+					<a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">반갑습니다.<%=userID%>님</a>
 						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-							<a class="dropdown-item" href="../member/logout.jsp">logout</a>
+							<a class="dropdown-item" href="member/logout.jsp">logout</a>
 							<a class="dropdown-item" href="#">Withdrawal</a>
 						</div>
 					</li>
-					<%
-						}
-					%>
+				<%
+					}
+				%>
 				</ul>
 			</div>
 		</div>
@@ -85,41 +91,23 @@
 	<div class="container col-lg-3">
 		<div>
 			<div class="jumbotron" style="padding-top: 20px;margin-top: 32px;">
-				<form method="post" action="../member/loginA.jsp">
-					<h3 style="text-align: center;">로그인</h3>
-					<div class="form-group">
-						<input type="text" class="form-control" placeholder="아이디"
-							name="id" maxlength="20">
-					</div>
+				<form method="post" action="../member/withdrawlA.jsp">
+					<h3 style="text-align: center;">비밀번호</h3>
 					<div class="form-group">
 						<input type="password" class="form-control" placeholder="비밀번호"
 							name="pw" maxlength="20">
 					</div>
 					<input type="submit" class="btn btn-primary form-control"
-						value="로그인">
+						value="비밀번호 확인">
 				</form>
 			</div>
 		</div>
 	</div>
-
-	<!-- Call to Action-->
-	<!-- <aside class="py-5 bg-light">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8">
-					<h3>질문사항은 FAQ로</h3>
-				</div>
-				<div class="col-md-4">
-					<a class="btn btn-lg btn-secondary btn-block" href="#">FAQ</a>
-				</div>
-			</div>
-		</div>
-	</aside> -->
+	
 	<!-- Footer-->
 	<footer class="py-5 bg-dark">
 		<div class="container">
-			<p class="m-0 text-center text-white">Copyright &copy; Your
-				Website 2021</p>
+			<p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p>
 		</div>
 	</footer>
 </body>

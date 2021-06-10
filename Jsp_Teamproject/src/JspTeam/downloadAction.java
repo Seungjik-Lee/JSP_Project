@@ -35,7 +35,7 @@ public class downloadAction extends HttpServlet {
 		} else {
 			downloadName = new String(FileName.getBytes("EUC-KR"), "8859_1");
 		}
-		
+		System.out.println(downloadName);
 		response.setHeader("Content-Dispsition", "attachment;filename=\"" + downloadName + "\";");
 		
 		FileInputStream fileInputStream = new FileInputStream(file);

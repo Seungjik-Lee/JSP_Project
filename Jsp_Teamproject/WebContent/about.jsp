@@ -101,53 +101,53 @@ String userID = (String) session.getAttribute("id");
                 <h2 class="mb-4">Our Team</h2>
                 <div class="row">
                     <div class="col-lg-3 mb-4 mb-lg-0">
-                        <div class="card h-80 text-center">
+                        <div class="card h-100 text-center">
                             <div class="card-body">
                                 <h4 class="card-title">배지왕</h4>
                                 <h6 class="card-subtitle mb-2 text-muted">Position</h6>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit.</p>
+                                <p class="card-text"><a href="https://github.com/BAE-JI-WANG">https://github.com/BAE-JI-WANG</a></p>
                             </div>
-                            <div class="card-footer"><a href="#!">bjy502@gmail.com</a></div>
+                            <div class="card-footer">bjy502@gmail.com</div>
                         </div>
                     </div>
                     <div class="col-lg-3 mb-4 mb-lg-0">
-                        <div class="card h-80 text-center">
+                        <div class="card h-100 text-center">
                             <div class="card-body">
                                 <h4 class="card-title">이기정</h4>
                                 <h6 class="card-subtitle mb-2 text-muted">Position</h6>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit.</p>
+                                <p class="card-text"><a href="https://github.com/special-sunshine">https://github.com/special-sunshine</a></p>
                             </div>
-                            <div class="card-footer"><a href="#!">kijeong08@gmail.com</a></div>
+                            <div class="card-footer">kijeong08@gmail.com</div>
                         </div>
                     </div>
                     <div class="col-lg-3 mb-4 mb-lg-0">
-                        <div class="card h-80 text-center">
+                        <div class="card h-100 text-center">
                             <div class="card-body">
                                 <h4 class="card-title">이시형</h4>
                                 <h6 class="card-subtitle mb-2 text-muted">Position</h6>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit.</p>
+                                <p class="card-text"><a href="https://github.com/FirstBright">https://github.com/FirstBright</a></p>
                             </div>
-                            <div class="card-footer"><a href="#!">mipo8890@gmail.com</a></div>
+                            <div class="card-footer">mipo8890@gmail.com</div>
                         </div>
                     </div>
                     <div class="col-lg-3 mb-4 mb-lg-0">
-                        <div class="card h-80 text-center">
+                        <div class="card h-100 text-center">
                             <div class="card-body">
                                 <h4 class="card-title">안재혁</h4>
                                 <h6 class="card-subtitle mb-2 text-muted">Position</h6>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit.</p>
+                                <p class="card-text"><a href="https://github.com/wogur03157">https://github.com/wogur03157</a></p>
                             </div>
-                            <div class="card-footer"><a href="#!">wogur03157@naver.com</a></div>
+                            <div class="card-footer">wogur03157@naver.com</div>
                         </div>
                     </div>
                     <div class="col-lg-3 mt-4">
-                        <div class="card h-80 text-center">
+                        <div class="card h-100 text-center">
                             <div class="card-body">
                                 <h4 class="card-title">이승직</h4>
                                 <h6 class="card-subtitle mb-2 text-muted">Position</h6>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit.</p>
+                                <p class="card-text"><a href="https://github.com/Seungjik-Lee">https://github.com/Seungjik-Lee</a></p>
                             </div>
-                            <div class="card-footer"><a href="#!">dltmdwlr@gmail.com</a></div>
+                            <div class="card-footer">dltmdwlr@gmail.com</div>
                         </div>
                     </div>
                 </div>

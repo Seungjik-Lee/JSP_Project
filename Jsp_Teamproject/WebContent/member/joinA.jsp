@@ -110,20 +110,6 @@
 			}
 		}
 	%>
-
-	<!-- Call to Action-->
-	<aside class="py-5 bg-light">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8">
-					<h3>질문사항은 FAQ로</h3>
-				</div>
-				<div class="col-md-4">
-					<a class="btn btn-lg btn-secondary btn-block" href="faq.jsp">FAQ</a>
-				</div>
-			</div>
-		</div>
-	</aside>
 	<!-- Footer-->
 	<footer class="py-5 bg-dark">
 		<div class="container">

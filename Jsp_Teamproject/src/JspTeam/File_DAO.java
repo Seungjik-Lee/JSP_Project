@@ -55,7 +55,7 @@ public class File_DAO {
 			PreparedStatement pstmt = conn.prepareStatement(SQL);
 			ResultSet rs = pstmt.executeQuery();
 			while (rs.next()) {
-				File_DTO file = new File_DTO(rs.getString(1), rs.getString(2), rs.getInt(3));
+				File_DTO file = new File_DTO(rs.getString("FileName"), rs.getString("FileRealName"), rs.getInt("downloadCount"));
 				list.add(file);
 			}
 		} catch (Exception e) {
