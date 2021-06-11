@@ -193,7 +193,7 @@
 					</tbody>
 				</table>
 				<!-- 글쓰기 버튼 -->
-				<input type="submit" class="btn btn-primary pull-right mb-4" value="댓글쓰기">
+				<input type="submit" class="btn btn-primary pull-right mb-4" value="댓글쓰기"> 
 			</form>
 		</div>							
 															

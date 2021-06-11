@@ -19,17 +19,33 @@ public class SB_DAO {
 		}
 	}
 	
-
+	//작성일자 메소드
+		public String getsbDate() {
+			String sql1 = "select now()";
+			
+			try {
+				PreparedStatement pstmt = conn.prepareStatement(sql1);
+				rs = pstmt.executeQuery();
+				
+				if(rs.next()) {
+					return rs.getString(1);
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			return ""; //데이터베이스 오류
+		}
 	
 	//글쓰기 메소드
 	public int write(int bbsID, String userID, String sbContent) {
-		String sql3 = "insert into sb values(?, ?, ?)";
+		String sql3 = "insert into sb(bbsID, userID, sbContent, sbdate) values(?, ?, ?, ?)";
 		
 		try {
 			PreparedStatement pstmt = conn.prepareStatement(sql3);
 			pstmt.setInt(1, bbsID);			
 			pstmt.setString(2, userID);			
-			pstmt.setString(3, sbContent);			
+			pstmt.setString(3, sbContent);	
+			pstmt.setString(4, getsbDate());
 			return pstmt.executeUpdate();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -51,7 +67,8 @@ public class SB_DAO {
 				SB_DB sbdb = new SB_DB();
 				sbdb.setBbsID(rs.getInt(1));				
 				sbdb.setUserID(rs.getString(2));				
-				sbdb.setSbContent(rs.getString(3));				
+				sbdb.setSbContent(rs.getString(3));
+				sbdb.setSbDate(rs.getString(4));
 				list.add(sbdb);
 			}
 		} catch (Exception e) {
@@ -77,7 +94,7 @@ public class SB_DAO {
 				sb.setBbsID(rs.getInt(1));				
 				sb.setUserID(rs.getString(2));				
 				sb.setSbContent(rs.getString(3));
-				
+				sb.setSbDate(rs.getString(4));
 				return sb;
 			}
 		} catch (Exception e) {
