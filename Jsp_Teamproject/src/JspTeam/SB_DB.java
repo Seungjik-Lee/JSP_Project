@@ -5,15 +5,7 @@ public class SB_DB {
 	private int bbsID;	
 	private String userID;	
 	private String sbContent;
-	private String sbDate;
-	private int sbID;
-
-	public int getSbID() {
-		return sbID;
-	}
-	public void setSbID(int sbID) {
-		this.sbID = sbID;
-	}
+	
 	
 	public int getBbsID() {
 		return bbsID;
@@ -36,12 +28,4 @@ public class SB_DB {
 		this.sbContent = bbsContent;
 	}
 	
-	public String getSbDate() {
-		return sbDate;
-	}
-	public void setSbDate(String sbDate) {
-		this.sbDate = sbDate;
-	}
-	
-
 }
