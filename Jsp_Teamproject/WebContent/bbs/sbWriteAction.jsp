@@ -48,7 +48,7 @@
 			if (result == -1) {
 				PrintWriter script = response.getWriter();
 				script.println("<script>");
-				script.println("alert('입력이 안 된 사항이 있습니다.')");
+				script.println("alert('데이터베이스 오류.')");
 				script.println("history.back()");
 				script.println("</script>");
 				// 글쓰기가 정상적으로 실행되면 알림창을 띄우고 게시판 메인으로 이동
