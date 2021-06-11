@@ -91,14 +91,19 @@
 	<div class="container col-lg-3">
 		<div>
 			<div class="jumbotron" style="padding-top: 20px;margin-top: 32px;">
-				<form method="post" action="../member/withdrawlA.jsp">
-					<h3 style="text-align: center;">비밀번호</h3>
+				<form method="post" action="./withdrawlA.jsp">
+					<h3 style="text-align: center;">회원탈퇴</h3>
 					<div class="form-group">
 						<input type="password" class="form-control" placeholder="비밀번호"
-							name="pw" maxlength="20">
+							name="pw" id="pw" maxlength="20">
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control" placeholder="비밀번호 확인"
+							name="pw" id="pw1" maxlength="20">
+						<div id="check" class="text-danger"></div>
 					</div>
 					<input type="submit" class="btn btn-primary form-control"
-						value="비밀번호 확인">
+						value="회원탈퇴">
 				</form>
 			</div>
 		</div>
@@ -111,4 +116,39 @@
 		</div>
 	</footer>
 </body>
+<script type="text/javascript">
+	$('#pw1').keyup(function() {
+		if ($('#pw').val() == $('#pw1').val()){
+			$('#check').text("비밀번호가 일치합니다.")
+			$('#check').attr("class","text-success")
+		}
+
+		else{
+			$('#check').text("비밀번호가 다릅니다.")
+			$('#check').attr("class","text-danger")
+		}
+		if ($('#pw1').val() == "")
+			$('#check').text("")
+	})
+
+		$('#pw').keyup(function() {
+		if ($('#pw').val() == $('#pw1').val()){
+			$('#check').text("비밀번호가 일치합니다.")
+			$('#check').attr("class","text-success")
+		}
+
+		else{
+			$('#check').text("비밀번호가 다릅니다.")
+			$('#check').attr("class","text-danger")
+		}
+		if ($('#pw').val() == "")
+			$('#check').text("")
+	})
+	$('#OK').click(function() {
+		if ($('#pw').val() != $('#pw1').val()) {
+			alert("비밀번호가 다릅니다.")
+			return false
+		}
+	})
+</script>
 </html>

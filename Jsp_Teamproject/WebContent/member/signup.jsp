@@ -98,7 +98,7 @@
 						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sign</a>
 						<div class="dropdown-menu dropdown-menu-right"
 							aria-labelledby="navbarDropdownBlog">
-							<a class="dropdown-item" href="./signin.jsp">Join</a> <a
+							<a class="dropdown-item" href="./signup.jsp">Join</a> <a
 								class="dropdown-item" href="./login.jsp">Login</a>
 						</div></li>
 					<%
