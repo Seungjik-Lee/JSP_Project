@@ -19,7 +19,7 @@
 	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <meta name="description" content="" />
 <meta name="author" content="" />
-<title>지역별 지정 병원 현황</title>
+
 <!-- Core theme CSS (includes Bootstrap)-->
 <link href="../css/styles.css" rel="stylesheet" />
 <!-- Font Awesome icons-->
@@ -66,6 +66,7 @@ span {
 	height: 450px;
 }
 </style>
+<title>지역별 지정 병원 현황</title>
 </head>
 <body>
 	<%
@@ -154,7 +155,7 @@ span {
 	%>
 	<div class="jumbotron">
 		<p>전국 시,도 지역별 지정 병원 현황</p>
-		<div class="grdiv text-center">
+		<div class="grdiv container text-center">
 			<%
 				for (int i = 0; i < 10; i++) {
 					GraphDB ct = list.get(i);
@@ -168,7 +169,7 @@ span {
 		</div>
 		<p></p>
 		<div class="container">
-			<table class="table table-hover">
+			<table class="table table-hover table-dark table-striped">
 				<thead>
 					<tr>
 						<th>지역이름</th>

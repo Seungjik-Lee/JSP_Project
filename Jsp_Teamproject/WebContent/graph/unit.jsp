@@ -122,7 +122,7 @@ rect {
 		(3기) 2018~2020년<br/>
 		(4기) 2021~2023년
 		<p></p>
-		<table class="table table-hover">
+		<table class="table table-hover table-dark table-striped">
 			<thead>
 				<tr>
 					<th>기수</th>

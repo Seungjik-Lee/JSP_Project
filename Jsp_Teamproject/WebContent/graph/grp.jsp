@@ -107,13 +107,13 @@
 	%>
 		<div class="jumbotron">
 		<h2>진료 파트별 지정 병원 현황</h2>
-			<div class="container text-center">
+			<div class="container one-graph text-center">
 				<p>
 					<진료 파트별 병원 수의 상위 10개 지정 병원 현황>
 				</p>
 			</div>
-			<div class="container one-graph text-center">
-				<table class="table table-dark table-hover text-center">
+			<div class="text-center">
+				<table class="table table-dark table-striped table-hover text-center">
 					<thead>
 						<tr>
 							<th>진료파트</th>
