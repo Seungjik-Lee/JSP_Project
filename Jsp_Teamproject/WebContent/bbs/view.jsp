@@ -151,9 +151,9 @@
 			<table class="table table-striped" style="text-align: center; border: 1px solid #dddddd">
 				<thead>
 					<tr>						
-						<th style="background-color: #eeeeee; text-align: center; width:75%;">내용</th>
-						<th style="background-color: #eeeeee; text-align: center; width:25%">작성자</th>
-						
+						<th style="background-color: #eeeeee; text-align: center; width:65%;">내용</th>
+						<th style="background-color: #eeeeee; text-align: center; width:10%">작성자</th>
+						<th style="background-color: #eeeeee; text-align: center; width:25%">작성시간</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -171,7 +171,7 @@
 					<tr>
 						<td><%= list.get(i).getSbContent() %></td>
 						<td><%= list.get(i).getUserID() %></td>
-						
+						<td><%= list.get(i).getSbDate() %></td>
 					</tr>
 					<%
 					}
@@ -193,7 +193,7 @@
 					</tbody>
 				</table>
 				<!-- 글쓰기 버튼 -->
-				<input type="submit" class="btn btn-primary pull-right mb-4" value="댓글쓰기"> 
+				<input type="submit" class="btn btn-primary pull-right mb-4" value="댓글쓰기">
 			</form>
 		</div>							
 															
