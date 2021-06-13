@@ -165,11 +165,11 @@ rect {
 	for(i=0; i<dataSet.length; i++){		
 	d3.select("#myGraph")
 		.append("rect")/*네모넣음*/
-		.transition().duration(500).delay(function(d, i) { return i * 1000})
+		.transition().duration(500).delay(function(d, i) { return i * 1000})//0.5초동안 변화함
 		.attr("x",0)
 		.attr("y",(i+1)*50)
 		.attr("height",30)
-		.attr("width",dataSet[i]*2)
+		.attr("width",dataSet[i]*2)//그래프 크기 변경
 		
 	d3.select("#myGraph")
 		.append("text")/*글자넣음*/
@@ -181,7 +181,7 @@ rect {
 		.attr("fill","black")
 		.attr("text-anchor","middle")
 	}
-	 var xScale = d3.scaleLinear()
+	 var xScale = d3.scaleLinear()//축 생성
         .domain([0, (400/2)])/*표시 수치*/
         .range([0, 400])/*범위*/
         

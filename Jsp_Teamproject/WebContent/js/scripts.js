@@ -7,55 +7,6 @@
 // Use this file to add JavaScript to your project
 
 
-function doGraUnit(dataSet){
-	d3.select("#myGraph")
-	.selectAll("rect")
-	.data(dataSet)
-	.enter()
-	.append("rect")
-	.attr("x", 0)
-	.attr("y", function(d,i){
-		return i * 50;
-    })
-    .attr("height", "30px")
-	.attr("width", "10px")
-    .transition()
-    .delay(function(d,i){
-        return i*500;
-    })
-    .duration(function(d,i){
-        return 2500;
-    })
-    .attr("width", function(d,i){
-        return d+"px";
-    })
-    
-    var xScale = d3.scaleLinear()
-        .domain([0, 150])
-        .range([0, 150])
-        
-    d3.select("#myGraph")
-        .append("g")
-        .attr("transform", "translate(0,210)")
-        .call(d3.axisBottom(xScale))
-        
-    var svg = 
- 	       d3.select("span")
- 	         .append("svg")
- 	         .attr("width", 1000)
- 	         .attr("height", 500)
- 	         
- 	var yScale = d3.scaleLinear()
- 	.domain([0, d3.max(dataset)]).range([500, 0]);   
- 	
- 	var yAxis = d3.axisLeft().scale(yScale);
- 	         
- 	svg.append("g")
- 	   .attr("transform", "translate(0, -50)")
- 	   .call(yAxis);
-}
-
-
 function doGraGrp(dataSet){
 	var w = 350, h = 350;
 	d3.select(".graph")
@@ -63,12 +14,12 @@ function doGraGrp(dataSet){
 	    .attr("width", w)
 	    .attr("height", h)
 	    .attr("id", "graphWrap");
-	var color = d3.schemeCategory10;
+	var color = d3.schemeCategory10;//d3에서 제공하는 10가지 색깔 활용
 	// pie 생성
 	// var pie = d3.layout.pie(); // d3 v3 버전
 	var pie = d3.pie();
 	var arc = d3.arc().innerRadius(40).outerRadius(150);
-    // 원 그리기
+    	// 원 그리기
 	
 	var svg = d3.select(".one-graph")
     	.append("svg")
@@ -79,11 +30,11 @@ function doGraGrp(dataSet){
     var g = svg.selectAll(".pie")
     	.data(pie(dataSet))
     	.enter()
-    	.append("g")
-    	.attr("class", "pie")
+    	.append("g")//객체에 g라는 태그 붙임
+    	.attr("class", "pie")//클래스명 pie
     	.attr("transform","translate("+w/2+","+h/2+")");
 	
-	g.append("path")
+	g.append("path")//path태그로 차트에 색 넣음
     	.style("fill", function(d, i) {
     			return color[i];
     	})
@@ -94,11 +45,11 @@ function doGraGrp(dataSet){
 	    })
 	    .attrTween("d", function(d, i) {// 보간처리
 	        var interpolate = d3.interpolate(
-	            {startAngle : d.startAngle, endAngle : d.startAngle},
-	             {startAngle : d.startAngle, endAngle : d.endAngle}
+	            {startAngle : d.startAngle, endAngle : d.startAngle},//각 부분의 시작각도
+	             {startAngle : d.startAngle, endAngle : d.endAngle}//각 부분의 종료 각도
 	        );
 	        return function(t){
-	             return arc(interpolate(t));
+	             return arc(interpolate(t));//시간에 따라 처리
 	        } 
 	    });
 	
