@@ -32,7 +32,7 @@
 <!-- Core theme JS-->
 <script src="../js/scripts.js"></script>
 <script src="https://d3js.org/d3.v6.min.js"></script>
-<style type="text/css">
+<style type="text/css">/*세로 막대 그래프 색깔 지정*/
 .blue {
 	background: #5abae6;
 }
@@ -49,7 +49,7 @@
 	background: #f7b358;
 }
 
-span {
+span { /*span으로 absolute 지정 외*/
 	position: absolute;
 	display: inline-block;
 	width: 60px;
@@ -140,13 +140,13 @@ span {
 	<%
 		int count = 0;
 		int sum = 0;
-		String color[] = { "blue", "red", "green", "yellow" };
+		String color[] = { "blue", "red", "green", "yellow" };<!--데이터 별 색깔을 다르게 지정하기 위한 소스-->
 		ArrayList<String> color1 = new ArrayList<String>();
 		for (int i = 0; i < list.size(); i++) {
-			color1.add(i, color[count]);
+			color1.add(i, color[count]);<!-- 리스트에 color 추가 -->
 			count++;
 
-			if (count > 3) {
+			if (count > 3) { <!-- 데이터는 많지만 4가지 색깔을 돌아가면서 넣게 하기 위한 처리-->
 				count = 0;
 			}
 			//System.out.println(count);
@@ -157,7 +157,7 @@ span {
 		<p>전국 시,도 지역별 지정 병원 현황</p>
 		<div class="grdiv container text-center">
 			<%
-				for (int i = 0; i < 10; i++) {
+				for (int i = 0; i < 10; i++) {<!--전국 시,도 지역별 지정 병원 수 상위 10개 데이터 출력-->
 					GraphDB ct = list.get(i);
 			%>
 			<span class="<%out.println(color1.get(i));%>"><%=ct.getCityName()%><br />
@@ -169,7 +169,7 @@ span {
 		</div>
 		<p></p>
 		<div class="container">
-			<table class="table table-hover table-dark table-striped">
+			<table class="table table-hover table-dark table-striped"> <!-- 표 출력을 위한 소스-->
 				<thead>
 					<tr>
 						<th>지역이름</th>
@@ -203,5 +203,5 @@ span {
 </body>
 </html>
 <script type="text/javascript">
-	doGraAddr(<%=ret%>)
+	doGraAddr(<%=ret%>)//함수 호출
 </script>

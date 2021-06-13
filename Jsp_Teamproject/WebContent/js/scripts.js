@@ -1,4 +1,4 @@
-/*!
+﻿/*!
 * Start Bootstrap - Modern Business v4.3.0 (https://startbootstrap.com/template-overviews/modern-business)
 * Copyright 2013-2021 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-modern-business/blob/master/LICENSE)
@@ -120,25 +120,16 @@ function doGraGrp(dataSet){
 
 function doGraAddr(dataset){
 	d3.selectAll("span")
-	    .data(dataset)
-	    .style("height","5%")
+	    .data(dataset)//data값은 dataset
+	    .style("height","5%")//높이가 5%일때부터
 	    .style("left",(d,i)=>(i*80)+"px")
-	    .transition().duration(500)
-	    .style("height",(d,i)=>d+"%")
+	    .transition().duration(500)//0.5초동안
+	    .style("height",(d,i)=>d+"%")//data 값 만큼 커진다.
 	
 	var svg = 
 	       d3.select("span")
-	         .append("svg")
+	         .append("svg")//svg판 생성
 	         .attr("width", 1000)
 	         .attr("height", 500)
 	         
-	var yScale = d3.scaleLinear()
-	.domain([0, d3.max(dataset)]).range([500, 0]) 
-	
-	var yAxis = d3.axisLeft().scale(yScale)
-	         
-	svg.append("g")
-	   .attr("transform", "translate(0, -50)")
-	   .call(yAxis)
-	
 }
