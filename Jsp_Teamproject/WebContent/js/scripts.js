@@ -73,7 +73,7 @@ function doGraAddr(dataset){
 	d3.selectAll("span")
 	    .data(dataset)//data값은 dataset
 	    .style("height","5%")//높이가 5%일때부터
-	    .style("left",(d,i)=>(i*80)+"px")
+	    .style("left",(d,i)=>(i*80)+"px")//index i값만큼 막대의 left위치 계산
 	    .transition().duration(500)//0.5초동안
 	    .style("height",(d,i)=>d+"%")//data 값 만큼 커진다.
 	

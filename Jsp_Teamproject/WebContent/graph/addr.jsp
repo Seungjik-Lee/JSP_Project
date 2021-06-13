@@ -140,13 +140,13 @@ span { /*span으로 absolute 지정 외*/
 	<%
 		int count = 0;
 		int sum = 0;
-		String color[] = { "blue", "red", "green", "yellow" };<!--데이터 별 색깔을 다르게 지정하기 위한 소스-->
+		String color[] = { "blue", "red", "green", "yellow" };//데이터 별 색깔을 다르게 지정하기 위한 소스
 		ArrayList<String> color1 = new ArrayList<String>();
 		for (int i = 0; i < list.size(); i++) {
-			color1.add(i, color[count]);<!-- 리스트에 color 추가 -->
+			color1.add(i, color[count]);//리스트에 color 추가
 			count++;
 
-			if (count > 3) { <!-- 데이터는 많지만 4가지 색깔을 돌아가면서 넣게 하기 위한 처리-->
+			if (count > 3) {//데이터는 많지만 4가지 색깔을 돌아가면서 넣게 하기 위한 처리
 				count = 0;
 			}
 			//System.out.println(count);
@@ -157,7 +157,7 @@ span { /*span으로 absolute 지정 외*/
 		<p>전국 시,도 지역별 지정 병원 현황</p>
 		<div class="grdiv container text-center">
 			<%
-				for (int i = 0; i < 10; i++) {<!--전국 시,도 지역별 지정 병원 수 상위 10개 데이터 출력-->
+				for (int i = 0; i < 10; i++) {//전국 시,도 지역별 지정 병원 수 상위 10개 데이터 출력
 					GraphDB ct = list.get(i);
 			%>
 			<span class="<%out.println(color1.get(i));%>"><%=ct.getCityName()%><br />
