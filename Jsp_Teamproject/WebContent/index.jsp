@@ -106,7 +106,7 @@
 			<div class="carousel-inner">
 				<div class="carousel-item active">
 					<img class="d-block w-100"
-						src="./img/용인세브란스.jpg" alt="..." />
+						src="./img/yongin.jpg" alt="..." />
 					<div class="carousel-caption d-none d-md-block">
 						<h3>용인세브란스병원</h3>
 						<p>This is a description for the first slide.</p>
@@ -114,7 +114,7 @@
 				</div>
 				<div class="carousel-item">
 					<img class="d-block w-100"
-						src="./img/연세세브란스.jpg" alt="..." />
+						src="./img/yeonsae.jpg" alt="..." />
 					<div class="carousel-caption d-none d-md-block">
 						<h3>연세세브란스병원</h3>
 						<p>This is a description for the second slide.</p>
@@ -122,7 +122,7 @@
 				</div>
 				<div class="carousel-item">
 					<img class="d-block w-100"
-						src="./img/분당서울병원.jpg" alt="..." />
+						src="./img/bundang.jpg" alt="..." />
 					<div class="carousel-caption d-none d-md-block">
 						<h3>분당서울대병원</h3>
 						<p>This is a description for the third slide.</p>
@@ -196,7 +196,7 @@
 				<div class="col-lg-6 col-sm-6 mb-4">
 					<div class="card h-100">
 						<a href="broad/broad_1st.jsp"><img class="card-img-top"
-							src="./img/사진1.jpg" alt="..." /></a>
+							src="./img/fig1.jpg" alt="..." /></a>
 						<div class="card-body">
 							<h4 class="card-title">
 								<a href="broad/broad_1st.jsp">1st Designated Hospital</a>
@@ -211,7 +211,7 @@
 				<div class="col-lg-6 col-sm-6 mb-4">
 					<div class="card h-100">
 						<a href="broad/broad_2nd.jsp"><img class="card-img-top"
-							src="./img/사진2.jpg" alt="..." /></a>
+							src="./img/fig2.jpg" alt="..." /></a>
 						<div class="card-body">
 							<h4 class="card-title">
 								<a href="broad/broad_2nd.jsp">2nd Designated Hospital</a>
@@ -225,7 +225,7 @@
 				<div class="col-lg-6 col-sm-6 mb-4">
 					<div class="card h-100">
 						<a href="broad/broad_3rd.jsp"><img class="card-img-top"
-							src="./img/사진3.jpg" alt="..." /></a>
+							src="./img/fig3.jpg" alt="..." /></a>
 						<div class="card-body">
 							<h4 class="card-title">
 								<a href="broad/broad_3rd.jsp">3rd Designated Hospital</a>
@@ -240,7 +240,7 @@
 				<div class="col-lg-6 col-sm-6 mb-4">
 					<div class="card h-100">
 						<a href="broad/broad_4th.jsp"><img class="card-img-top"
-							src="./img/사진4.jpg" alt="..." /></a>
+							src="./img/fig4.jpg" alt="..." /></a>
 						<div class="card-body">
 							<h4 class="card-title">
 								<a href="broad/broad_4th.jsp">4th Designated Hospital</a>
