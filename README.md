@@ -18,5 +18,5 @@
     - 공공데이터 api를 이용해 데이터 크롤링
     - 크롤링한 데이터 분석
     - 분석한 데이터 DB에 저장
-- 서버 : Apache Tomcat
-    - 웹 페이지 실행
+- Database : MySQL
+    - MySQL Workbench를 활용하여 DB 관리
