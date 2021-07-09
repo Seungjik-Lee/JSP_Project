@@ -4,6 +4,9 @@
 - Python은 PyCharm을 사용한 환경에서 진행하였습니다.
 - DataBase는 MySQL를 사용한 환경에서 진행하였습니다.   
 
+## 제작기간
+2021/05/13 ~ 2021/06/13
+
 ![img](JSP_홈화면.JPG)
 ![img](JSP_회원가입.JPG)
 ![img](JSP_list.JPG)
