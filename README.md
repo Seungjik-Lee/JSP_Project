@@ -2,7 +2,10 @@
 이 저장소는 JSP와 공공데이터를 사용한 전문지정병원 프로젝트를 저장한 곳입니다.
 - JSP는 Eclipse에서 사용한 환경에서 진행하였습니다.
 - Python은 PyCharm을 사용한 환경에서 진행하였습니다.
-- DataBase는 MySQL를 사용한 환경에서 진행하였습니다.
+- DataBase는 MySQL를 사용한 환경에서 진행하였습니다.   
+
+![img](JSP_홈화면.JPG)
+![img](JSP_회원가입.JPG)
 
 ## 소개
 - JSP
